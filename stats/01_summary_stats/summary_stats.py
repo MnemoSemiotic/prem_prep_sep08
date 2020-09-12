@@ -37,3 +37,9 @@ farmhouse = 4.0, 14.0, 11.0, 9.0, 9.0, 8.0, 4.0, 20.0, 5.0, 8.9, 21.0, 9.2, 3.0,
 
 # print(f'Urban endotoxin mean trimmed(1): {mean(urban, trim_by=1)}')
 # print(f'Farmhouse endotoxin mean trimmed(1): {mean(farmhouse, trim_by=1)}')
+
+'''
+Median
+x_med = ?
+'''
+
