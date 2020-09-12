@@ -43,3 +43,32 @@ Median
 x_med = ?
 '''
 
+lst1_odd = [13, 18, 13, 14, 13, 16, 14, 21, 13]
+lst2_even = [15, 14, 10, 8, 12, 8, 16, 13]
+
+# sort list
+lst1_odd_sorted = sorted(lst1_odd)
+lst2_even_sorted = sorted(lst2_even)
+
+
+def median(lst):
+    lst_sorted = sorted(lst)
+
+    # if the list is odd
+    if len(lst) % 2 == 1: # if the list is odd
+        median_idx = int(len(lst) / 2)
+        return lst_sorted[median_idx]
+    # if the list is even
+    else:
+        lower_mid = lst_sorted[int(len(lst)/2)-1]
+        higher_mid = lst_sorted[int(len(lst)/2)]
+        return (higher_mid + lower_mid) / 2
+
+
+# print(lst1_odd_sorted)
+# print(median(lst1_odd_sorted))
+
+# print()
+
+# print(lst2_even_sorted)
+# print(median(lst2_even_sorted))
