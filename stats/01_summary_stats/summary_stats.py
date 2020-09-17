@@ -101,7 +101,6 @@ def five_num_summary(lst):
 
     # print(sorted_lst)
 
-
     if len(lst) % 2 == 1:
         # [[1, 2, 5, 6, 7], 9, [12, 15, 18, 19, 27]]
         #  
@@ -124,5 +123,5 @@ def five_num_summary(lst):
 a = [15,2,9,5,6,7,27,12,18,19,1]
 b = [6,1,4,51,7,16,10,14,46,22,24,56,48,54]
 
-print(five_num_summary(a))
-print(five_num_summary(b))
+# print(five_num_summary(a))
+# print(five_num_summary(b))
