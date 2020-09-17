@@ -99,7 +99,7 @@ def five_num_summary(lst):
 
     sorted_lst = sorted(lst)
 
-    print(sorted_lst)
+    # print(sorted_lst)
 
     if len(lst) % 2 == 1:
         # [[1, 2, 5, 6, 7], 9, [12, 15, 18, 19, 27]]
@@ -174,4 +174,6 @@ def remove_outliers(lst):
     
     return output
 
+
+# print(remove_outliers(house_values))
 
