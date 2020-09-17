@@ -57,3 +57,11 @@ Find the median value of the homes sold in April
 Do you think mean or median is a “better” measure of center for this data? why? 
 
 '''
+
+house_prices = [590, 615, 575, 608, 350, 1285, 408, 540, 555, 679]
+
+print(sorted(house_prices))
+
+print(f'mean {mean(house_prices)}')
+print(f'median {median(house_prices)}')
+
