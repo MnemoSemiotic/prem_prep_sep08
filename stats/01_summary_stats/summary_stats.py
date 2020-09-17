@@ -99,7 +99,7 @@ def five_num_summary(lst):
 
     sorted_lst = sorted(lst)
 
-    print(sorted_lst)
+    # print(sorted_lst)
 
 
     if len(lst) % 2 == 1:
@@ -114,8 +114,8 @@ def five_num_summary(lst):
         lower_half = sorted_lst[0:int(len(lst) / 2)]
         upper_half = sorted_lst[int(len(lst) / 2):]
 
-    print(lower_half)
-    print(upper_half)
+    # print(lower_half)
+    # print(upper_half)
     q1 = median(lower_half)
     q3 = median(upper_half)
 
