@@ -106,7 +106,7 @@ def five_num_summary(lst):
         # [[1, 2, 5, 6, 7], 9, [12, 15, 18, 19, 27]]
         #  
         lower_half = sorted_lst[0: int(len(lst) / 2)]
-        upper_half = sorted_lst[int(len(lst) / 2):]
+        upper_half = sorted_lst[int(len(lst) / 2)+1:]
         
     else:
         # [[1, 4, 6, 7, 10, 14, 16,] [22, 24, 46, 48, 51, 54, 56]]
