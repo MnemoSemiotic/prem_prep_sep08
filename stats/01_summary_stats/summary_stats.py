@@ -133,5 +133,27 @@ def iqr(lst):
     _, q1, _, q3, _ = five_num_summary(lst)
     return q3 - q1
 
-print(iqr(a))
-print(iqr(b))
+# print(iqr(a))
+# print(iqr(b))
+
+
+''' Detect Outlier '''
+
+def detect_outliers(lst):
+    _, q1, _, q3, _ = five_num_summary(lst)
+    iqr_ = iqr(lst)
+
+    outliers = []
+
+    for num in lst:
+        if num < q1 - 1.5*iqr_:
+            outliers.append(num)
+        if num > q3 + 1.5*iqr_:
+            outliers.append(num)
+
+    return outliers
+
+house_values = [-6000000, 450000, 652234, 89000, 750000, 224968, 500000, 125000, 36000, 70000, 650000, 3400000, 560000]
+
+
+print(detect_outliers(house_values))
