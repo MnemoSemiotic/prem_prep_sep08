@@ -36,10 +36,24 @@ def median(lst):
         return mean([lst_sorted[upper_idx - 1], 
                      lst_sorted[upper_idx]])
 
-print(sorted(lst1_odd))
-print(median(lst1_odd))
+# print(sorted(lst1_odd))
+# print(median(lst1_odd))
 
-print()
+# print()
 
-print(sorted(lst2_even))
-print(median(lst2_even))
+# print(sorted(lst2_even))
+# print(median(lst2_even))
+
+
+'''
+Housing Prices Breakout
+
+{ 590, 615, 575, 608, 350, 1285, 408, 540, 555, 679 }
+
+Find the mean value of the homes sold in April
+
+Find the median value of the homes sold in April 
+
+Do you think mean or median is a “better” measure of center for this data? why? 
+
+'''
