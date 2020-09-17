@@ -99,7 +99,7 @@ def five_num_summary(lst):
 
     sorted_lst = sorted(lst)
 
-    # print(sorted_lst)
+    print(sorted_lst)
 
     if len(lst) % 2 == 1:
         # [[1, 2, 5, 6, 7], 9, [12, 15, 18, 19, 27]]
@@ -125,3 +125,13 @@ b = [6,1,4,51,7,16,10,14,46,22,24,56,48,54]
 
 # print(five_num_summary(a))
 # print(five_num_summary(b))
+
+
+''' Interquartile Range '''
+
+def iqr(lst):
+    _, q1, _, q3, _ = five_num_summary(lst)
+    return q3 - q1
+
+print(iqr(a))
+print(iqr(b))
