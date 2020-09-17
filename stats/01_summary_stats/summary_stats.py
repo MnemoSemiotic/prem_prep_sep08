@@ -81,4 +81,6 @@ def mode(lst):
 
 mode_lst = ['writing', 'writing', 'hiking', 'painting', 'skating', 'skating', 'writing', 'macromet']
 
-print(mode(mode_lst))
+# print(mode(mode_lst))
+
+
