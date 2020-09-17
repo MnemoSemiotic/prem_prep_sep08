@@ -60,8 +60,25 @@ Do you think mean or median is a “better” measure of center for this data? w
 
 house_prices = [590, 615, 575, 608, 350, 1285, 408, 540, 555, 679]
 
-print(sorted(house_prices))
+# print(sorted(house_prices))
 
-print(f'mean {mean(house_prices)}')
-print(f'median {median(house_prices)}')
+# print(f'mean {mean(house_prices)}')
+# print(f'median {median(house_prices)}')
 
+
+'''
+Mode
+'''
+
+def mode(lst):
+    most_occurring = lst[0]
+
+    for item in lst[0:]:
+        if lst.count(item) > lst.count(most_occurring):
+            most_occurring = item
+
+    return most_occurring
+
+mode_lst = ['writing', 'writing', 'hiking', 'painting', 'skating', 'skating', 'writing', 'macromet']
+
+print(mode(mode_lst))
