@@ -139,16 +139,16 @@ def iqr(lst):
 
 ''' Detect Outlier '''
 
-def detect_outliers(lst):
+def detect_outliers(lst, outlier_coef=1.5):
     _, q1, _, q3, _ = five_num_summary(lst)
     iqr_ = iqr(lst)
 
     outliers = []
 
     for num in lst:
-        if num < q1 - 1.5*iqr_:
+        if num < q1 - outlier_coef*iqr_:
             outliers.append(num)
-        if num > q3 + 1.5*iqr_:
+        if num > q3 + outlier_coef*iqr_:
             outliers.append(num)
 
     return outliers
@@ -157,3 +157,9 @@ house_values = [-6000000, 450000, 652234, 89000, 750000, 224968, 500000, 125000,
 
 
 print(detect_outliers(house_values))
+# [-6000000, 3400000]
+
+
+'''
+Write a function called remove_outliers, that takes a list and returns a list with the outliers removed.
+'''
