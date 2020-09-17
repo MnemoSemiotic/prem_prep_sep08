@@ -163,3 +163,13 @@ print(detect_outliers(house_values))
 '''
 Write a function called remove_outliers, that takes a list and returns a list with the outliers removed.
 '''
+
+def remove_outliers(lst):
+    outliers = detect_outliers(lst)
+    output = []
+
+    for num in lst:
+        if num not in outliers:
+            output.append(num)
+    
+    return output
