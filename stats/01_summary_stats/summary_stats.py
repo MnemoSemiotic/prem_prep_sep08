@@ -22,6 +22,24 @@ Median
 lst1_odd = [13, 18, 13, 14, 13, 16, 14, 21, 13]
 lst2_even = [15, 14, 10, 8, 12, 8, 16, 13]
 
-print(sorted(lst1_odd))
-print(sorted(lst2_even))
 
+
+def median(lst):
+    lst_sorted = sorted(lst)
+
+    # if odd
+    if len(lst) % 2 == 1:
+        return lst_sorted[int(len(lst) / 2)]
+    # if even
+    else:
+        upper_idx = int(len(lst)/2)
+        return mean([lst_sorted[upper_idx - 1], 
+                     lst_sorted[upper_idx]])
+
+print(sorted(lst1_odd))
+print(median(lst1_odd))
+
+print()
+
+print(sorted(lst2_even))
+print(median(lst2_even))
