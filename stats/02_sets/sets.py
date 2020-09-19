@@ -110,7 +110,7 @@ def union_mult_sets(*args):
                 set_union.append(item)
     return set_union
 
-print(union_mult_sets(list1, list2, list3))
+# print(union_mult_sets(list1, list2, list3))
 ['bear', 'cat', 'dog', 'dolphin', 'weasel', 'elephant', 'mink', 'mountain lion', 'whale', 'sea cucumber', 'eagle']
 
 
@@ -136,13 +136,20 @@ for roll in four_sided:
         for flip2 in fair_coin:
             samp_space.append([roll, flip1, flip2])
 
-for outcome in samp_space:
-    print(outcome)
+# for outcome in samp_space:
+#     print(outcome)
 
 
 # List the sample points in the following events:
 # A = The event in which the die roll results in exactly one pip showing
 # B = The event in which at least one of the coin flips results in heads
+A = []
+for outcome in samp_space:
+    if outcome[0] == 1:
+        A.append(outcome)
+
+print(A)
+[[1, 'H', 'H'], [1, 'H', 'T'], [1, 'T', 'H'], [1, 'T', 'T']]
 
 
 # List the sample points which are in the Union of events A and B from above
