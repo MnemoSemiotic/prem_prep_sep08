@@ -23,4 +23,9 @@ for _ in range(20):
 def die_roll(sides=6):
     return choice(range(1, sides+1))
 
-print(die_roll())
+# sum of 20 die rolls
+twenty_rolls = []
+for _ in range(20):
+    twenty_rolls.append(die_roll())
+
+print(sum(twenty_rolls))
