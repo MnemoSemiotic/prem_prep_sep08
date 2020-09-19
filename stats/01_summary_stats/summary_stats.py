@@ -200,5 +200,28 @@ def variance(lst, sample=True):
 a = [1, 2, 5, 6, 7, 9, 12, 15, 18, 19, 27]
 # print(mean(a))
 
-print(f'Pop: {variance(a, sample=False)}')
-print(f'Sample: {variance(a, sample=True)}')
+# print(f'Pop: {variance(a, sample=False)}')
+# print(f'Sample: {variance(a, sample=True)}')
+
+
+from random import choice
+
+pop = list(range(0,1000))
+
+samp = []
+
+while len(samp) < 200:
+    num = choice(range(0,1000))
+    if num not in samp:
+        samp.append(num)
+
+
+print('Population')
+print(mean(pop))
+print(variance(pop))
+
+print()
+
+print('Sample')
+print(mean(samp))
+print(variance(samp))
