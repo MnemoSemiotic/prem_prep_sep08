@@ -250,7 +250,7 @@ sample_space = union_mult_sets(list1, list2, list3)
 def complement(samp_space, set_):
     return difference(samp_space, set_)
 
-print(complement(sample_space, list3))
+# print(complement(sample_space, list3))
 # ['cat', 'dolphin', 'weasel', 'elephant', 'mountain lion']
 
 
@@ -336,7 +336,8 @@ for outcome in sample_space:
 #     print(outcome)
 
 # What is A - B?
-print(A.difference(B))
+print(difference(A, B))
 
+print()
 # What is B - A?
-print(B.difference(A))
+print(difference(B, A))
