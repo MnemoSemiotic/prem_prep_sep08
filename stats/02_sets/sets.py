@@ -310,8 +310,8 @@ for roll1 in range(1, 6+1):
     for roll2 in range(1, 6+1):
         sample_space.append([roll1, roll2])
 
-for outcome in sample_space:
-    print(outcome)
+# for outcome in sample_space:
+#     print(outcome)
 
 # Event A: any roll with a sum greater than or equal to 10
 # Event B: any roll with an even sum
@@ -325,16 +325,18 @@ for outcome in sample_space:
         B.append(outcome)
 
 # What do our events A and B look like?
-print('A:')
-for outcome in A:
-    print(outcome)
+# print('A:')
+# for outcome in A:
+#     print(outcome)
 
-print()
+# print()
 
-print('B:')
-for outcome in B:
-    print(outcome)
+# print('B:')
+# for outcome in B:
+#     print(outcome)
 
 # What is A - B?
+print(A.difference(B))
 
 # What is B - A?
+print(B.difference(A))
