@@ -296,3 +296,27 @@ for outcome in sample_space:
 # List the sample points in the set (AC)c
 # print(complement(sample_space, intersection(A, C)))
 [['H', 'H', 'H', 'T'], ['H', 'H', 'T', 'H'], ['H', 'H', 'T', 'T'], ['H', 'T', 'H', 'H'], ['H', 'T', 'H', 'T'], ['H', 'T', 'T', 'H'], ['H', 'T', 'T', 'T'], ['T', 'H', 'H', 'H'], ['T', 'H', 'H', 'T'], ['T', 'H', 'T', 'H'], ['T', 'H', 'T', 'T'], ['T', 'T', 'H', 'H'], ['T', 'T', 'H', 'T'], ['T', 'T', 'T', 'H'], ['T', 'T', 'T', 'T']]
+
+
+
+'''
+Breakout Slide 17
+'''
+
+# Let our sample space be rolling two 6-sided dice.
+# Event A: any roll with a sum greater than or equal to 10
+# Event B: any roll with an even sum
+# What do our events A and B look like?
+
+sample_space = []
+
+for roll1 in range(1, 6+1):
+    for roll2 in range(1, 6+1):
+        sample_space.append([roll1, roll2])
+
+for outcome in sample_space:
+    print(outcome)
+
+# What is A - B?
+
+# What is B - A?
