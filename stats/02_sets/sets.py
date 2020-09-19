@@ -221,3 +221,14 @@ list3 = ['bear', 'whale', 'sea cucumber', 'mink', 'eagle', 'dog']
 
 sample_space = union_mult_sets(list1, list2, list3)
 
+
+def complement(samp_space, set_):
+    comp = []
+
+    for item in samp_space:
+        if item not in set_:
+            comp.append(item)
+
+    return comp
+
+print(complement(sample_space, list3))
