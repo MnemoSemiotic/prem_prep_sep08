@@ -48,3 +48,12 @@ s2 = list(set([7,8,9,0,2,3]))
 [0, 2, 3, 7, 8, 9]
 
 
+def dedupe(lst):
+    deduped_inorder = []
+    for element in lst:
+        if element not in deduped_inorder:
+            deduped_inorder.append(element)
+    return deduped_inorder
+
+print(dedupe(s1))
+print(dedupe(s2))
