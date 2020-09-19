@@ -36,9 +36,15 @@ For the moment, consider the set() type in python to be a way to remove duplicat
 from lists
 '''
 
-# list/set trick
+# list/set trick for deduping (doesn't maintain order)
 s1 = list(set([7,8,9,0,1,2,3,4,7,8,9,0]))
 s2 = list(set([7,8,9,0,2,3]))
 
-print(s1)
-print(s2)
+# print(s1)
+# print(s2)
+
+# Sets do not maintain order
+[0, 1, 2, 3, 4, 7, 8, 9]
+[0, 2, 3, 7, 8, 9]
+
+
