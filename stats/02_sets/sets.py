@@ -111,3 +111,5 @@ def union_mult_sets(*args):
     return set_union
 
 print(union_mult_sets(list1, list2, list3))
+['bear', 'cat', 'dog', 'dolphin', 'weasel', 'elephant', 'mink', 'mountain lion', 'whale', 'sea cucumber', 'eagle']
+
