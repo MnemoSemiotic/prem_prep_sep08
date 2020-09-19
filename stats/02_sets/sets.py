@@ -84,5 +84,6 @@ def union(set1, set2):
             set_union.append(item)
     return set_union
 
-print(union(list1, list2))
+# print(union(list1, list2))
+['bear', 'cat', 'dog', 'dolphin', 'weasel', 'elephant', 'mink', 'mountain lion']
 
