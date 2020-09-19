@@ -177,3 +177,14 @@ def remove_outliers(lst):
 
 # print(remove_outliers(house_values))
 
+
+'''
+Variance and Standard Deviation
+
+'''
+
+def variance(lst, sample=True):
+    total = 0
+
+    mean_ = mean(lst)
+    
