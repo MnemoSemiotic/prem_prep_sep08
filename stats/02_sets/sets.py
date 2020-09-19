@@ -28,4 +28,17 @@ twenty_rolls = []
 for _ in range(20):
     twenty_rolls.append(die_roll())
 
-print(sum(twenty_rolls))
+# print(sum(twenty_rolls))
+
+
+'''
+For the moment, consider the set() type in python to be a way to remove duplicates
+from lists
+'''
+
+# list/set trick
+s1 = list(set([7,8,9,0,1,2,3,4,7,8,9,0]))
+s2 = list(set([7,8,9,0,2,3]))
+
+print(s1)
+print(s2)
