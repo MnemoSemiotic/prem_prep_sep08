@@ -231,4 +231,4 @@ def complement(samp_space, set_):
 
     return comp
 
-print(complement(sample_space, list3))
+# print(complement(sample_space, list3))
