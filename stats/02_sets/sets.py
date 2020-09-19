@@ -336,8 +336,8 @@ for outcome in sample_space:
 #     print(outcome)
 
 # What is A - B?
-print(difference(A, B))
+# print(difference(A, B))
 
-print()
-# What is B - A?
-print(difference(B, A))
+# print()
+# # What is B - A?
+# print(difference(B, A))
