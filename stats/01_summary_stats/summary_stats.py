@@ -197,6 +197,10 @@ def variance(lst, sample=True):
         return total / len(lst)
 
 
+def stdev(lst, sample=True):
+
+
+
 a = [1, 2, 5, 6, 7, 9, 12, 15, 18, 19, 27]
 # print(mean(a))
 
@@ -216,12 +220,12 @@ while len(samp) < 200:
         samp.append(num)
 
 
-print('Population')
-print(f'mu: {mean(pop)}')
-print(f'sigma^2: {variance(pop)}')
+# print('Population')
+# print(f'mu: {mean(pop)}')
+# print(f'sigma^2: {variance(pop)}')
 
-print()
+# print()
 
-print('Sample')
-print(f'x_bar: {mean(samp)}')
-print(f's^2: {variance(samp)}')
+# print('Sample')
+# print(f'x_bar: {mean(samp)}')
+# print(f's^2: {variance(samp)}')
