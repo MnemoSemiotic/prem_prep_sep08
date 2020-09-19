@@ -217,11 +217,11 @@ while len(samp) < 200:
 
 
 print('Population')
-print(mean(pop))
-print(variance(pop))
+print(f'mu: {mean(pop)}')
+print(f'sigma^2: {variance(pop)}')
 
 print()
 
 print('Sample')
-print(mean(samp))
-print(variance(samp))
+print(f'x_bar: {mean(samp)}')
+print(f's^2: {variance(samp)}')
