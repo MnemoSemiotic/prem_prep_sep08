@@ -254,3 +254,30 @@ print(complement(sample_space, list3))
 # ['cat', 'dolphin', 'weasel', 'elephant', 'mountain lion']
 
 
+'''
+Breakout Slide 13
+'''
+
+# Given the random experiment which is defined by four sequential flips of a fair coin, and the following events:
+# A = There are 3 or more heads
+# B = There are 2 or fewer tails
+# C = All of the coins show the same face
+# {HHHH, HHHT,
+# List the sample points in each A, B, and C
+coin_flips = ['H', 'T']
+
+sample_space = []
+
+for flip1 in coin_flips:
+    for flip2 in coin_flips:
+        for flip3 in coin_flips:
+            for flip4 in coin_flips:
+                sample_space.append([flip1, flip2, flip3, flip4, ])
+
+for samp in sample_space:
+    print(samp)
+
+
+# List the sample points in the set ACc
+
+# List the sample points in the set (AC)c
