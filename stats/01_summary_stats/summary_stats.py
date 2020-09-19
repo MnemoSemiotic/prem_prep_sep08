@@ -197,8 +197,9 @@ def variance(lst, sample=True):
         return total / len(lst)
 
 
+from math import sqrt
 def stdev(lst, sample=True):
-
+    return sqrt(variance(lst, sample))
 
 
 a = [1, 2, 5, 6, 7, 9, 12, 15, 18, 19, 27]
