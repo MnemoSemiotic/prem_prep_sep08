@@ -195,7 +195,7 @@ def intersection_mult(*args):
         for item in args[0]:
             flag = True
             for set_ in args[1:]:
-                if item not in _set:
+                if item not in set_:
                     flag = False
                     break
             if flag == True:
@@ -204,4 +204,7 @@ def intersection_mult(*args):
     else:
         return set_intersect
 
-print(intersection_mult())           
+# print(intersection_mult())
+[]  
+
+print(intersection_mult(list1, list2, list3))
