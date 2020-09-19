@@ -290,7 +290,8 @@ for outcome in sample_space:
 
 # List the sample points in the set ACc
 # "A intersect the complement of C"
-print(intersection(A, complement(sample_space, C)))
-
+# print(intersection(A, complement(sample_space, C)))
+[['H', 'H', 'H', 'T'], ['H', 'H', 'T', 'H'], ['H', 'T', 'H', 'H'], ['T', 'H', 'H', 'H']]
 
 # List the sample points in the set (AC)c
+print(complement(sample_space, intersection(A, C)))
