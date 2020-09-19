@@ -211,3 +211,13 @@ def intersection_mult(*args):
 ['bear', 'dog']
 
 
+'''
+Complement
+- requires the sample space to perform
+'''
+list1 = ['bear', 'cat', 'dog', 'dolphin', 'weasel']
+list2 = ['bear', 'dog', 'elephant', 'weasel', 'mink', 'mountain lion']
+list3 = ['bear', 'whale', 'sea cucumber', 'mink', 'eagle', 'dog']
+
+sample_space = union_mult_sets(list1, list2, list3)
+
