@@ -67,3 +67,22 @@ def dedupe(lst):
 [7, 8, 9, 0, 2, 3]
 
 
+
+'''
+Union
+'''
+
+list1 = ['bear', 'cat', 'dog', 'dolphin', 'weasel']
+list2 = ['bear', 'dog', 'elephant', 'weasel', 'mink', 'mountain lion']
+list3 = ['bear', 'whale', 'sea cucumber', 'mink', 'eagle', 'dog']
+
+
+def union(set1, set2):
+    set_union = set1.copy()
+    for item in set2:
+        if item not in set_union:
+            set_union.append(item)
+    return set_union
+
+print(union(list1, list2))
+
