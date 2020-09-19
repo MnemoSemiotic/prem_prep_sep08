@@ -209,27 +209,48 @@ a = [1, 2, 5, 6, 7, 9, 12, 15, 18, 19, 27]
 # print(f'Sample: {variance(a, sample=True)}')
 
 
-from random import choice
+# from random import choice
 
-pop = list(range(0,1000))
+# pop = list(range(0,1000))
 
-samp = []
+# samp = []
 
-while len(samp) < 200:
-    num = choice(range(0,1000))
-    if num not in samp:
-        samp.append(num)
+# while len(samp) < 200:
+#     num = choice(range(0,1000))
+#     if num not in samp:
+#         samp.append(num)
 
 
 
-print('Population')
-print(f'mu: {mean(pop)}')
-print(f'sigma^2: {variance(pop)}')
-print(f'sigma: {stdev(pop)}')
+# print('Population')
+# print(f'mu: {mean(pop)}')
+# print(f'sigma^2: {variance(pop)}')
+# print(f'sigma: {stdev(pop)}')
 
-print()
+# print()
 
-print('Sample')
-print(f'x_bar: {mean(samp)}')
-print(f's^2: {variance(samp)}')
-print(f's: {stdev(samp)}')
+# print('Sample')
+# print(f'x_bar: {mean(samp)}')
+# print(f's^2: {variance(samp)}')
+# print(f's: {stdev(samp)}')
+
+
+'''
+Breakout Slide 41
+'''
+
+house_prices = [590, 615, 575, 608, 350, 1285, 408, 540, 555, 679]
+
+# a.
+print(f'sample variance: {variance(house_prices)}')
+
+# b. 
+print(f'sample stdev: {stdev(house_prices)}')
+
+# c. 
+print(f'sample variance: {variance(remove_outliers(house_prices))}')
+
+
+# sample variance: 64140.72222222222
+# sample stdev: 253.2601868083932
+# sample variance: 2112.285714285714
