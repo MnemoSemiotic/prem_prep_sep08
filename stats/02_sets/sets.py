@@ -77,7 +77,7 @@ def star_args(*args):
         print(item)
     return None
 
-star_args('hi', 56, int, [1,2,34,5,6])
+# star_args('hi', 56, int, [1,2,34,5,6])
 
 
 
