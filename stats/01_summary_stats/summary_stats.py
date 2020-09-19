@@ -187,4 +187,12 @@ def variance(lst, sample=True):
     total = 0
 
     mean_ = mean(lst)
-    
+
+    for item in lst:
+        total += (item - mean_)**2
+
+    if sample:
+        return total / (len(lst) - 1)
+    else:
+        return total / len(lst)
+
