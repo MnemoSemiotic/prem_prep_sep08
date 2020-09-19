@@ -214,6 +214,10 @@ def intersection_mult(*args):
 '''
 Set Difference
 '''
+list1 = ['bear', 'cat', 'dog', 'dolphin', 'weasel']
+list2 = ['bear', 'dog', 'elephant', 'weasel', 'mink', 'mountain lion']
+list3 = ['bear', 'whale', 'sea cucumber', 'mink', 'eagle', 'dog']
+
 
 def difference(set1, set2):
     set_diff = []
@@ -223,6 +227,11 @@ def difference(set1, set2):
             set_diff.append(item)
 
     return set_diff
+
+
+print(difference(list1, list2))
+print(difference(list2, list1))
+
 
 
 '''
@@ -239,7 +248,7 @@ sample_space = union_mult_sets(list1, list2, list3)
 def complement(samp_space, set_):
     return difference(samp_space, set_)
 
-# print(complement(sample_space, list3))
-
+print(complement(sample_space, list3))
+['cat', 'dolphin', 'weasel', 'elephant', 'mountain lion']
 
 
