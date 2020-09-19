@@ -220,13 +220,16 @@ while len(samp) < 200:
     if num not in samp:
         samp.append(num)
 
+print(a)
+print()
+print('Population')
+print(f'mu: {mean(pop)}')
+print(f'sigma^2: {variance(pop)}')
+print(f'sigma: {stdev(pop)}')
 
-# print('Population')
-# print(f'mu: {mean(pop)}')
-# print(f'sigma^2: {variance(pop)}')
+print()
 
-# print()
-
-# print('Sample')
-# print(f'x_bar: {mean(samp)}')
-# print(f's^2: {variance(samp)}')
+print('Sample')
+print(f'x_bar: {mean(samp)}')
+print(f's^2: {variance(samp)}')
+print(f's: {stdev(samp)}')
