@@ -212,6 +212,20 @@ def intersection_mult(*args):
 
 
 '''
+Set Difference
+'''
+
+def difference(set1, set2):
+    set_diff = []
+
+    for item in set1:
+        if item not in set2:
+            set_diff.append(item)
+
+    return set_diff
+
+
+'''
 Complement
 - requires the sample space to perform
 '''
@@ -223,12 +237,9 @@ sample_space = union_mult_sets(list1, list2, list3)
 
 
 def complement(samp_space, set_):
-    comp = []
-
-    for item in samp_space:
-        if item not in set_:
-            comp.append(item)
-
-    return comp
+    return difference(samp_space, set_)
 
 # print(complement(sample_space, list3))
+
+
+
