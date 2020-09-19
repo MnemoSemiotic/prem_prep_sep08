@@ -37,8 +37,8 @@ from lists
 '''
 
 # list/set trick for deduping (doesn't maintain order)
-s1 = list(set([7,8,9,0,1,2,3,4,7,8,9,0]))
-s2 = list(set([7,8,9,0,2,3]))
+# s1 = list(set([7,8,9,0,1,2,3,4,7,8,9,0]))
+# s2 = list(set([7,8,9,0,2,3]))
 
 # print(s1)
 # print(s2)
@@ -48,6 +48,10 @@ s2 = list(set([7,8,9,0,2,3]))
 [0, 2, 3, 7, 8, 9]
 
 
+# maintain order with a dedupe function
+s1 = [7,8,9,0,1,2,3,4,7,8,9,0]
+s2 = [7,8,9,0,2,3]
+
 def dedupe(lst):
     deduped_inorder = []
     for element in lst:
@@ -55,5 +59,11 @@ def dedupe(lst):
             deduped_inorder.append(element)
     return deduped_inorder
 
-print(dedupe(s1))
-print(dedupe(s2))
+# print(dedupe(s1))
+# print(dedupe(s2))
+
+# maintained order
+[7, 8, 9, 0, 1, 2, 3, 4]
+[7, 8, 9, 0, 2, 3]
+
+
