@@ -229,9 +229,11 @@ def difference(set1, set2):
     return set_diff
 
 
-print(difference(list1, list2))
-print(difference(list2, list1))
+# print(difference(list1, list2))
+['cat', 'dolphin']
 
+# print(difference(list2, list1))
+['elephant', 'mink', 'mountain lion']
 
 
 '''
@@ -249,6 +251,6 @@ def complement(samp_space, set_):
     return difference(samp_space, set_)
 
 print(complement(sample_space, list3))
-['cat', 'dolphin', 'weasel', 'elephant', 'mountain lion']
+# ['cat', 'dolphin', 'weasel', 'elephant', 'mountain lion']
 
 
