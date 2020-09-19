@@ -163,3 +163,18 @@ for outcome in samp_space:
 print(union(A, B))
 [[1, 'H', 'H'], [1, 'H', 'T'], [1, 'T', 'H'], [1, 'T', 'T'], [2, 'H', 'H'], [2, 'H', 'T'], [2, 'T', 'H'], [3, 'H', 'H'], [3, 'H', 'T'], [3, 'T', 'H'], [4, 'H', 'H'], [4, 'H', 'T'], [4, 'T', 'H']]
 
+
+
+
+'''
+Intersection
+shared, not mutually exclusive elements
+'''
+
+list1 = ['bear', 'cat', 'dog', 'dolphin', 'weasel']
+list2 = ['bear', 'dog', 'elephant', 'weasel', 'mink', 'mountain lion']
+list3 = ['bear', 'whale', 'sea cucumber', 'mink', 'eagle', 'dog']
+
+
+def intersection(set1, set2):
+    pass
