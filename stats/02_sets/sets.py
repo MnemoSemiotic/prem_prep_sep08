@@ -207,4 +207,7 @@ def intersection_mult(*args):
 # print(intersection_mult())
 []  
 
-print(intersection_mult(list1, list2, list3))
+# print(intersection_mult(list1, list2, list3))
+['bear', 'dog']
+
+
