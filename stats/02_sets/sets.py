@@ -294,4 +294,5 @@ for outcome in sample_space:
 [['H', 'H', 'H', 'T'], ['H', 'H', 'T', 'H'], ['H', 'T', 'H', 'H'], ['T', 'H', 'H', 'H']]
 
 # List the sample points in the set (AC)c
-print(complement(sample_space, intersection(A, C)))
+# print(complement(sample_space, intersection(A, C)))
+[['H', 'H', 'H', 'T'], ['H', 'H', 'T', 'H'], ['H', 'H', 'T', 'T'], ['H', 'T', 'H', 'H'], ['H', 'T', 'H', 'T'], ['H', 'T', 'T', 'H'], ['H', 'T', 'T', 'T'], ['T', 'H', 'H', 'H'], ['T', 'H', 'H', 'T'], ['T', 'H', 'T', 'H'], ['T', 'H', 'T', 'T'], ['T', 'T', 'H', 'H'], ['T', 'T', 'H', 'T'], ['T', 'T', 'T', 'H'], ['T', 'T', 'T', 'T']]
