@@ -189,4 +189,19 @@ def intersection(set1, set2):
 
 
 def intersection_mult(*args):
-    pass
+    set_intersect = []
+
+    if len(args) > 0:
+        for item in args[0]:
+            flag = True
+            for set_ in args[1:]:
+                if item not in _set:
+                    flag = False
+                    break
+            if flag == True:
+                set_intersect.append(item)
+        return set_intersect
+    else:
+        return set_intersect
+
+print(intersection_mult())           
