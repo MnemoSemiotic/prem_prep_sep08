@@ -304,10 +304,6 @@ Breakout Slide 17
 '''
 
 # Let our sample space be rolling two 6-sided dice.
-# Event A: any roll with a sum greater than or equal to 10
-# Event B: any roll with an even sum
-# What do our events A and B look like?
-
 sample_space = []
 
 for roll1 in range(1, 6+1):
@@ -315,6 +311,28 @@ for roll1 in range(1, 6+1):
         sample_space.append([roll1, roll2])
 
 for outcome in sample_space:
+    print(outcome)
+
+# Event A: any roll with a sum greater than or equal to 10
+# Event B: any roll with an even sum
+
+A, B = [], []
+
+for outcome in sample_space:
+    if sum(outcome) >= 10:
+        A.append(outcome)
+    if sum(outcome) % 2 == 0:
+        B.append(outcome)
+
+# What do our events A and B look like?
+print('A:')
+for outcome in A:
+    print(outcome)
+
+print()
+
+print('B:')
+for outcome in B:
     print(outcome)
 
 # What is A - B?
