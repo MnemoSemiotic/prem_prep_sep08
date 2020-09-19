@@ -156,7 +156,7 @@ def detect_outliers(lst, outlier_coef=1.5):
 house_values = [-6000000, 450000, 652234, 89000, 750000, 224968, 500000, 125000, 36000, 70000, 650000, 3400000, 560000]
 
 
-print(detect_outliers(house_values))
+# print(detect_outliers(house_values))
 # [-6000000, 3400000]
 
 
@@ -198,4 +198,7 @@ def variance(lst, sample=True):
 
 
 a = [1, 2, 5, 6, 7, 9, 12, 15, 18, 19, 27]
-print(mean(a))
+# print(mean(a))
+
+print(f'Pop: {variance(a, sample=False)}')
+print(f'Sample: {variance(a, sample=True)}')
