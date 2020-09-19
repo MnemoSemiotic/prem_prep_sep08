@@ -274,10 +274,23 @@ for flip1 in coin_flips:
             for flip4 in coin_flips:
                 sample_space.append([flip1, flip2, flip3, flip4, ])
 
-for samp in sample_space:
-    print(samp)
+# for samp in sample_space:
+#     print(samp)
 
+A, B, C = [], [], []
+
+for outcome in sample_space:
+    if outcome.count('H') >= 3:
+        A.append(outcome)
+    if outcome.count('T') <= 2:
+        B.append(outcome)
+    if outcome.count('H') == 4 or outcome.count('T') == 4:
+        C.append(outcome)
+    
 
 # List the sample points in the set ACc
+# "A intersect the complement of C"
+print(intersection(A, complement(sample_space, C)))
+
 
 # List the sample points in the set (AC)c
