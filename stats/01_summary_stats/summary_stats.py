@@ -196,3 +196,6 @@ def variance(lst, sample=True):
     else:
         return total / len(lst)
 
+
+a = [1, 2, 5, 6, 7, 9, 12, 15, 18, 19, 27]
+print(mean(a))
