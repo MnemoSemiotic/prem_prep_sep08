@@ -94,3 +94,12 @@ U = {True, False}
 A = {True}
 
 # print(A.intersection(U) == A)
+
+
+
+'''
+Absorption Laws
+A ∪ (AB) = A
+A(A ∪ B) = A
+'''
+print(setA.union(setA.intersection(setB)) == setA)
