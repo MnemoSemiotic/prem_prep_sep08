@@ -69,9 +69,6 @@ for lst in four_flips:
 
 
 '''
-Suppose you call the function series_of_flips(14). What is the probability that you 
-will get all 'H' values?
-
 What is in one coin flip, that you get a heads?
    P(H) = ?
 T
@@ -82,4 +79,24 @@ TT
 TH
 HT
 HH <--
+
+In three coin flips, what is the P of getting all heads?
+TTT
+TTH
+THT
+THH
+HTT
+HTH
+HHT
+HHH <--
+
+
+Suppose you call the function series_of_flips(14). What is the probability that you 
+will get all 'H' values?
+(1/2)**14
+
+What is the probability of getting this series of outcomes in 6 coin flips:
+HTTHTH ?
+
+(1/2)**6
 '''
