@@ -120,3 +120,19 @@ A ∪ ∅ = A
 # print(setA.union(null_set) == setA)
 
 
+'''
+Complement Laws for Universal and Empty Set
+∅^c = U
+U^c = ∅
+'''
+
+'''
+Involution Law
+(A^c)^c = A
+'''
+
+
+'''
+AB ∪ AB^c = A
+'''
+print(((a and b) or (a and not b)) == a)
