@@ -62,7 +62,24 @@ for lst in four_flips:
     if lst.count('H') == 3:
         three_heads.append(lst)
 
-print(len(three_heads))
-print(len(four_flips))
-print(len(three_heads) / len(four_flips))
+# print(len(three_heads))
+# print(len(four_flips))
+# print(len(three_heads) / len(four_flips))
 
+
+
+'''
+Suppose you call the function series_of_flips(14). What is the probability that you 
+will get all 'H' values?
+
+What is in one coin flip, that you get a heads?
+   P(H) = ?
+T
+H <--
+
+In two coin flips, what is the P of getting both heads?
+TT
+TH
+HT
+HH <--
+'''
