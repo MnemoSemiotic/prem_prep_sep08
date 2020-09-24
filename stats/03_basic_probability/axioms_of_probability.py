@@ -28,6 +28,7 @@ c = True
 Associative
 (A ∪ B) ∪ C = A ∪ (B ∪ C) = A ∪ B ∪ C 
 ⇒ 5 + (6 + 7) = (5 + 6 ) + 7 = 5 + 6 + 7
+(AB)C = A(BC) = ABC
 '''
 # print((setA.union(setB)).union(setC) == (setC.union(setB)).union(setA))
 # print((setA.union(setB)).union(setC) == (setC.union(setB)).union(setA))
@@ -40,8 +41,8 @@ print(((a or b) or c) == (a or (b or c)))
 
 
 '''
-(AB)C = A(BC) = ABC
 Distributive
 A ∪ (BC) = (A ∪ B)(A ∪ C) 
 A(B ∪ C) = (AB) ∪ (AC)
 '''
+
