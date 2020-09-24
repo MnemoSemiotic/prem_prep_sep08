@@ -29,10 +29,14 @@ Associative
 (A ∪ B) ∪ C = A ∪ (B ∪ C) = A ∪ B ∪ C 
 ⇒ 5 + (6 + 7) = (5 + 6 ) + 7 = 5 + 6 + 7
 '''
-print((setA.union(setB)).union(setC) == (setC.union(setB)).union(setA))
-# print(setA.intersection(setB) == setB.intersection(setA))
+# print((setA.union(setB)).union(setC) == (setC.union(setB)).union(setA))
+# print((setA.union(setB)).union(setC) == (setC.union(setB)).union(setA))
 
+a = True
+b = False
+c = True
 
+print(((a or b) or c) == (a or (b or c)))
 
 
 '''
