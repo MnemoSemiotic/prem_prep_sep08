@@ -12,7 +12,8 @@ Commutative
 A ∪ B = B ∪ A
 AB = BA
 '''
-print(setA.union(setB) == setB.union(setA))
+# print(setA.union(setB) == setB.union(setA))
+# print(setA.intersection(setB) == setB.intersection(setA))
 
 
 
