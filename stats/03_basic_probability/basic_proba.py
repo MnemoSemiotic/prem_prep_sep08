@@ -150,3 +150,31 @@ If you have a series of independent events, say flipping a coin... you can calc 
 you flip a coin 7 times, what is the probability of getting 
 HHTHTTT --> 0.5**7
 '''
+
+
+'''
+Factorial intuition for space cardinality
+
+If you have 5 people, and you have 5 chairs, how many different ways can you seat them in those chairs?
+
+5!
+
+a b c d e
+a b c e d
+a b d e c
+'''
+
+poss = ['a', 'b', 'c', 'd', 'e']
+arrangs = []
+
+for p1 in poss:
+    for p2 in poss:
+        for p3 in poss:
+            for p4 in poss:
+                for p5 in poss:
+                    deduped = list(set([p1, p2, p3, p4, p5]))
+                    if len(deduped) == 5:
+                        arrangs.append(deduped)
+
+for arrang in arrangs:
+    print(arrang)
