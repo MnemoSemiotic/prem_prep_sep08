@@ -85,4 +85,7 @@ a = True
 b = False
 c = True
 
-print(setA.intersection(sample_space) == setA)
+# print(setA.intersection(sample_space) == setA)
+
+null_set = set()
+print(setA.intersection(null_set) == null_set)
