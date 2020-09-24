@@ -113,3 +113,10 @@ c = True
 # print(a and (a or b) ==  a)
 
 
+'''
+Identity Property
+A ∪ ∅ = A
+'''
+# print(setA.union(null_set) == setA)
+
+
