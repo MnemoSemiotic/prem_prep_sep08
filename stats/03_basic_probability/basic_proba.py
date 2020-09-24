@@ -99,4 +99,9 @@ What is the probability of getting this series of outcomes in 6 coin flips:
 HTTHTH ?
 
 (1/2)**6
+
+What is the probability of getting 3 heads in 6 coin flips?
+(need to either understand the cardinality of the subset and the superset OR, we use the binomial pmf)
 '''
+
+
