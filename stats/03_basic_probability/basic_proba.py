@@ -114,5 +114,10 @@ outcomes = []
 for r1 in range(1, 6):
     for r2 in range(1, 6):
         for r3 in range(1, 6):
-            outcomes.append(r1 + r2 + r3)
+            outcomes.append([r1, r2, r3])
+
+A = []
+
+for rolls in outcomes:
+    if sum
 
