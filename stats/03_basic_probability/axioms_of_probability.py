@@ -37,12 +37,17 @@ a = True
 b = False
 c = True
 
-print(((a or b) or c) == (a or (b or c)))
+# print(((a or b) or c) == (a or (b or c)))
 
 
 '''
 Distributive
 A ∪ (BC) = (A ∪ B)(A ∪ C) 
 A(B ∪ C) = (AB) ∪ (AC)
+
+5*(2 * 3) = (5 * 2) + (5 * 3)
 '''
+a = True
+b = False
+c = True
 
