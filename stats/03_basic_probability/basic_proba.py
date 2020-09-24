@@ -41,3 +41,4 @@ def four_flip_sample_space():
                     outcomes.append([f1, f2, f3, f4])
     
     return outcomes
+
