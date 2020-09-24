@@ -194,7 +194,7 @@ def factorial(n):
         prod *= num
     return prod
 
-print(len(arrangs) == factorial(arrangs))
+print(len(arrangs) == factorial(5))
 
 ['a', 'b', 'c', 'd', 'e']
 ['a', 'b', 'c', 'e', 'd']
@@ -316,3 +316,7 @@ print(len(arrangs) == factorial(arrangs))
 ['e', 'd', 'b', 'c', 'a']
 ['e', 'd', 'c', 'a', 'b']
 ['e', 'd', 'c', 'b', 'a']
+
+'''
+What is the probability, given the last question, that a and c are seated next to each other AND e and d are seated next to each other?
+'''
