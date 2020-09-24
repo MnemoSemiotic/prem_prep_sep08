@@ -109,5 +109,7 @@ a = True
 b = False
 c = True
 
-print(a or (a and b) == a)
-print(a and (a or b) ==  a)
+# print(a or (a and b) == a)
+# print(a and (a or b) ==  a)
+
+
