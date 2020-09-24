@@ -147,5 +147,6 @@ Multiplication Rule
 
 If you have a series of independent events, say flipping a coin... you can calc a probability of that series of events occurring in a specific order by simply multiplying the probability of each event.
 
-
+you flip a coin 7 times, what is the probability of getting 
+HHTHTTT --> 0.5**7
 '''
