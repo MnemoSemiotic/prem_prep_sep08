@@ -131,3 +131,12 @@ What is the probability of getting three 6's when rolling 3 6-sided dice?
 
 
 
+'''
+Dependence:
+
+What is the probability of choosing an ace of spades from a 52 card deck?
+1/52
+
+Given that the prior event has occurred, what is the P(Queen of Hearts)?
+1/51
+'''
