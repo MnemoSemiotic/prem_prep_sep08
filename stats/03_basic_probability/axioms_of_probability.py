@@ -135,4 +135,4 @@ Involution Law
 '''
 AB ∪ AB^c = A
 '''
-print(((a and b) or (a and not b)) == a)
+# print(((a and b) or (a and not b)) == a)
