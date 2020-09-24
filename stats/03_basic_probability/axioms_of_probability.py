@@ -136,3 +136,10 @@ Involution Law
 AB ∪ AB^c = A
 '''
 # print(((a and b) or (a and not b)) == a)
+
+'''
+DeMorgan’s Laws
+1st: (A ∪ B)^c = A^cB^c
+
+2nd: (AB)^c = A^c ∪ B^c
+'''
