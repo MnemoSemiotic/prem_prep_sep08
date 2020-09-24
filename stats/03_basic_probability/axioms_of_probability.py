@@ -54,3 +54,18 @@ c = True
 # print(setA.union(setB.intersection(setC)) == (setA.union(setB)).intersection(setA.union(setC)))
 
 # print((a or (b and c) == (a and b) or (a and c)))
+
+
+
+'''
+Idempotent Laws
+A ∪ A = A
+AA = A
+'''
+a = True
+b = False
+c = True
+
+# print(setA.union(setA) == setA)
+# print((a and a) == a)
+
