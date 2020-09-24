@@ -165,6 +165,7 @@ a b d e c
 '''
 
 poss = ['a', 'b', 'c', 'd', 'e']
+counts = []
 arrangs = []
 
 for p1 in poss:
@@ -172,9 +173,16 @@ for p1 in poss:
         for p3 in poss:
             for p4 in poss:
                 for p5 in poss:
-                    deduped = list(set([p1, p2, p3, p4, p5]))
-                    if len(deduped) == 5:
-                        arrangs.append(deduped)
+                    counts.append([p1, p2, p3, p4, p5])
+                    
+for lst in counts:
+    perm = True
+    for item in lst:
 
-for arrang in arrangs:
-    print(arrang)
+        if lst.count(item) > 1:
+            perm = False
+    if perm:
+        arrangs.append(lst)
+
+for item in arrangs:
+    print(item)
