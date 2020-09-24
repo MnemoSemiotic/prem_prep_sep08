@@ -19,18 +19,21 @@ a = True
 b = False
 c = True
 
-print((a or b) == (b or a))
-print((a and b) == (b and a))
-
-
-
+# print((a or b) == (b or a))
+# print((a and b) == (b and a))
 
 
 
 '''
 Associative
-(A ∪ B) ∪ C = A ∪ (B ∪ C) = A ∪ B ∪ C ⇒ 5 + (6 + 7) = (5 + 6 ) + 7 = 5 + 6 + 7
+(A ∪ B) ∪ C = A ∪ (B ∪ C) = A ∪ B ∪ C 
+⇒ 5 + (6 + 7) = (5 + 6 ) + 7 = 5 + 6 + 7
 '''
+print((setA.union(setB)).union(setC) == (setC.union(setB)).union(setA))
+# print(setA.intersection(setB) == setB.intersection(setA))
+
+
+
 
 '''
 (AB)C = A(BC) = ABC
