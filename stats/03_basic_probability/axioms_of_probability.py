@@ -15,7 +15,12 @@ AB = BA
 # print(setA.union(setB) == setB.union(setA))
 # print(setA.intersection(setB) == setB.intersection(setA))
 
+a = True
+b = False
+c = True
 
+print((a or b) == (b or a))
+print((a and b) == (b and a))
 
 
 
