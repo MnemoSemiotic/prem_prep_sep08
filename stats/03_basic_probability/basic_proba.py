@@ -119,5 +119,8 @@ for r1 in range(1, 6):
 A = []
 
 for rolls in outcomes:
-    if sum
+    if sum(rolls) < 6:
+        A.append(rolls)
+
+print(len(A) / len(outcomes))
 
