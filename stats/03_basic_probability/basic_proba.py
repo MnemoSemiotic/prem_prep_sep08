@@ -30,3 +30,14 @@ Write a function called four_flip_sample_space that has no parameters. It should
     ['T', 'T', 'T', 'T']
 ]
 '''
+def four_flip_sample_space():
+    flip = ['H', 'T']
+    outcomes = []
+
+    for f1 in flip:
+        for f2 in flip:
+            for f3 in flip:
+                for f4 in flip:
+                    outcomes.append([f1, f2, f3, f4])
+    
+    return outcomes
