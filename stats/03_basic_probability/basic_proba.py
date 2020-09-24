@@ -194,7 +194,7 @@ def factorial(n):
         prod *= num
     return prod
 
-print(len(arrangs)) == factorial(arrangs))
+print(len(arrangs) == factorial(arrangs))
 
 ['a', 'b', 'c', 'd', 'e']
 ['a', 'b', 'c', 'e', 'd']
