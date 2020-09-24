@@ -140,3 +140,12 @@ What is the probability of choosing an ace of spades from a 52 card deck?
 Given that the prior event has occurred, what is the P(Queen of Hearts)?
 1/51
 '''
+
+
+'''
+Multiplication Rule
+
+If you have a series of independent events, say flipping a coin... you can calc a probability of that series of events occurring in a specific order by simply multiplying the probability of each event.
+
+
+'''
