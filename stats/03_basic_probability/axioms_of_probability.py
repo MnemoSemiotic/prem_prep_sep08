@@ -102,4 +102,12 @@ Absorption Laws
 A ∪ (AB) = A
 A(A ∪ B) = A
 '''
-print(setA.union(setA.intersection(setB)) == setA)
+# print(setA.union(setA.intersection(setB)) == setA)
+# print(setA.intersection(setA.union(setB)) == setA)
+
+a = True
+b = False
+c = True
+
+print(a or (a and b) == a)
+print(a and (a or b) ==  a)
