@@ -107,7 +107,6 @@ What is the probability of getting 3 heads in 6 coin flips?
 
 '''
 In three six-sided dice rolls, what is the probability of getting a sum of the three rolls below 6?
-
 '''
 
 outcomes = []
