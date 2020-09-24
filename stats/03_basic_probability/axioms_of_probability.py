@@ -51,4 +51,6 @@ a = True
 b = False
 c = True
 
-print((a or (b and c) == (a and b) or (a and c)))
+# print(setA.union(setB.intersection(setC)) == (setA.union(setB)).intersection(setA.union(setC)))
+
+# print((a or (b and c) == (a and b) or (a and c)))
