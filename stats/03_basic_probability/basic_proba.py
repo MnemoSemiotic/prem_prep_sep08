@@ -129,3 +129,5 @@ What is the probability of getting three 6's when rolling 3 6-sided dice?
 (1/6)**3
 '''
 
+
+
