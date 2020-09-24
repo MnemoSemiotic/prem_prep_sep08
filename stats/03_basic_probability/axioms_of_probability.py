@@ -69,3 +69,20 @@ c = True
 # print(setA.union(setA) == setA)
 # print((a and a) == a)
 
+
+
+'''
+Domination Laws
+Aside: 
+U = Universal Set
+The set of which all other subsets are a subset of
+∅  = Empty Set = { }
+A ∪ U = U
+A ∩ U = A
+A ∩ ∅ = ∅
+'''
+a = True
+b = False
+c = True
+
+print(setA.intersection(sample_space) == setA)
