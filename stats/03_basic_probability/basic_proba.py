@@ -122,5 +122,11 @@ for rolls in outcomes:
     if sum(rolls) < 6:
         A.append(rolls)
 
-print(len(A) / len(outcomes))
+# print(len(A) / len(outcomes)) # 0.08
+
+'''
+What is the probability of getting three 6's when rolling 3 6-sided dice?
+
+(1/6)**3
+'''
 
