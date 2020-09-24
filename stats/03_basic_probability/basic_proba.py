@@ -63,6 +63,6 @@ for lst in four_flips:
         three_heads.append(lst)
 
 print(len(three_heads))
-print(len(len_four_flips))
+print(len(four_flips))
 print(len(three_heads) / len(four_flips))
 
