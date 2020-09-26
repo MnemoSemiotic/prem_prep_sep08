@@ -61,6 +61,8 @@ def perm(n, k):
 
 
 '''
+Permutations intuition
+
 Five pets, and you have 5 pet beds. What are all the ways that you arrange those five pets in their beds.
 '''
 
