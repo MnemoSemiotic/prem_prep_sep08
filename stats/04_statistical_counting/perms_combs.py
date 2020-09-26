@@ -159,6 +159,7 @@ Given that there are 120 attendees at a combinatorics convention, 10 attendees w
 '''
 Out of a set of 21 basketball players, only 5 can be on the court at any given time. What are all the combinations possible for that basketball team?
 '''
+# an expensive counting approach:
 
 num_combs = comb(21, 5) # 20349
 
@@ -194,3 +195,9 @@ def basketball_combs():
 
 for five in basketball_combs():
     print(five)
+
+
+# an expensive sampling approach:
+'''
+We can sample five players from our list of 21. We can continue to build our combinations of players until we reach 20349 combinations
+'''
