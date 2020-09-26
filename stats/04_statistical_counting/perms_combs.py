@@ -41,7 +41,6 @@ P(10, 4) = 10! / (10 - 4)!
 
 '''
 
-
 '''
 Code the permutations(n, k) function.
 
