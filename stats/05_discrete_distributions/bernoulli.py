@@ -11,6 +11,7 @@ what is the probability that you'll get tails?
 
 from random import random
 def bernoulli(p_success=0.5):
-    pass
+    draw = random()
+    print(draw)
 
-print(random())
+print(bernoulli(p_success=0.5))
