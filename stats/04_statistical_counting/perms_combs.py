@@ -181,7 +181,15 @@ def basketball_combs():
         if len(list(set(five))) == 5:
             permutations.append(five)
 
-    return permutations
+    combinations = []
+
+    for five in permutations:
+        sorted_five = sorted(five)
+
+        if sorted_five not in combinations:
+            combinations.append(sorted_five)
+
+    return combinations
 
 
 for five in basketball_combs():
