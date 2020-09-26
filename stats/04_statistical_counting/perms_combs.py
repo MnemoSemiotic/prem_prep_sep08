@@ -229,5 +229,5 @@ team_size = 5
 num_players = 3
 print(comb(team_size, num_players))
 print(len(basketball_combs_samp(team_size, num_players)))
-print(len(list(set(basketball_combs_samp(team_size, num_players)))))
+
 
