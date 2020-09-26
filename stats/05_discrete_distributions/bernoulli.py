@@ -42,6 +42,10 @@ How many ways can you arrange 2 1s in 5-bit binary?
 
 The Binomial Distribution Question:
 If you have n Bernoulli trials in a row, what is the probability that k of them are successful?
+
+You flip a coin 20 times. What is the probability that get 14 heads out of 20 flips?
+0000001111111111111...
+1111111100000000.....
 ...
 
 '''
