@@ -20,3 +20,25 @@ Given that the line was formed organically (i.e, people got into line as they ar
 >> 1 / 10!
 '''
 
+
+
+'''
+Permutations
+P(n, k) = n! / (n - k)!
+nPk
+'''
+
+'''
+You have 10 students and you are conducting a science fair where 4 students will win 1st, 2nd, etc. How many different arrangements of those 4 winners is possible?
+
+P(10, 4) = 10! / (10 - 4)!
+
+10 * 9 * 8 * 7 * 6 * 5 * 4 * 3 * 2 * 1
+= --------------------------------------
+                 6 * 5 * 4 * 3 * 2 * 1
+
+10 * 9 * 8 * 7 
+= ------------
+               
+'''
+print(10*9*8*7)
