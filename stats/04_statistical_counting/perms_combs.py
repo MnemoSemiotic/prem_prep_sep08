@@ -60,3 +60,9 @@ def perm(n, k):
 # 	return perm
 
 
+'''
+Five pets, and you have 5 pet beds. What are all the ways that you arrange those five pets in their beds.
+'''
+
+base_5 = ['bat', 'cat', 'frog', 'eel', 'hamster']
+
