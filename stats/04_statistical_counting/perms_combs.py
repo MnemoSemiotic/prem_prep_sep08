@@ -94,8 +94,8 @@ for an_number in animals_counting:
         animals_perms.append(an_number)
 
 
-for an_number in animals_perms:
-    print(an_number)
+# for an_number in animals_perms:
+#     print(an_number)
 
 # print(len(animals_perms))
 
@@ -110,13 +110,22 @@ There are ten participants in a road race. Gold, silver, and bronze medals will 
 
 
 '''
-print(perm(10, 3)) # 720
+# print(perm(10, 3)) # 720
 
 '''
 
 Given that the outcome of the race is determined by chance, and each runner has a unique bib number between one and ten; what is the probability that the runners with bib numbers 1, 2, and 3 finish first, second, and third, respectively?
+'''
+# print(1 / 720)
 
+'''
 Assume that there is a world-record holder amongst the runners in the race which is guaranteed to win, how many permutations are there for the silver and bronze medals?
+
+9 * 8 ...
+----
+7 * 6 ...
+
+72
 '''
 
-
+# print(perm(9, 2))
