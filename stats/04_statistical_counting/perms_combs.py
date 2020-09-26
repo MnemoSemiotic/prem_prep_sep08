@@ -150,3 +150,9 @@ def comb(n, k):
 # print(comb(52, 5)) # 2598960
 
 
+'''
+Given that there are 120 attendees at a combinatorics convention, 10 attendees will be randomly chosen to take a survey to determine the location of the following year’s convention. How many possible combinations of survey takers are there in the group of 120 attendees?
+'''
+# print(comb(120, 10))
+
+
