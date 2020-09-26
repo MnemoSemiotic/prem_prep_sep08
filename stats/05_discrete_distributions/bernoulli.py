@@ -20,3 +20,25 @@ def bernoulli(p_success=0.5):
 
 trials = 1000000
 # print([bernoulli(p_success=0.5) for _ in range(trials)].count(True) / trials)
+
+
+'''
+A Binomial Distribution is a series of Bernoulli Trials, where we keep a fixed probability p.
+
+How many ways can you arrange 1 1 in 5-bit binary?
+00001
+00010
+00100
+01000
+10000
+
+How many ways can you arrange 2 1s in 5-bit binary?
+00011
+00101
+01001
+10001
+00110
+01010
+...
+
+'''
