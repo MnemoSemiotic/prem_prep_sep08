@@ -144,4 +144,4 @@ DeMorgan’s Laws
 2nd: (AB)^c = A^c ∪ B^c
 '''
 # print((not (a or b)) == (not a) and (not b))
-print(not (a and b) == (not a) or (not b))
+# print(not (a and b) == (not a) or (not b))
