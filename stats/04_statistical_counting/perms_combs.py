@@ -225,5 +225,6 @@ def basketball_combs_samp(team_size=21, num_players=5):
 
     return combinations
 
-print(len(basketball_combs_samp(21, num_players=5)))
-print(len(list(set(basketball_combs_samp(21, num_players=5)))))
+team_size = 11
+print(len(basketball_combs_samp(team_size, num_players=5)))
+print(len(list(set(basketball_combs_samp(team_size, num_players=5)))))
