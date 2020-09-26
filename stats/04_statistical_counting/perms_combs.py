@@ -50,3 +50,11 @@ def perm(n, k):
     return int(factorial(n) / factorial(n-k))
 
 # print(perm(10, 4))
+
+
+'''Computationally better permutations func'''
+# def perm(n, k):
+# 	perm = 1
+# 	for i in range(n, n-k, -1):
+# 		perm *= i
+# 	return perm
