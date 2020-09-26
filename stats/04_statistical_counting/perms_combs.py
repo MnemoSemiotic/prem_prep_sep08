@@ -58,3 +58,5 @@ def perm(n, k):
 # 	for i in range(n, n-k, -1):
 # 		perm *= i
 # 	return perm
+
+
