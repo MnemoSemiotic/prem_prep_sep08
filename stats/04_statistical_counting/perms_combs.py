@@ -1,4 +1,6 @@
-
+'''
+Factorial determines cardinality/magnitude of a set of outcomes
+'''
 
 def factorial(num):
     prod = 1
@@ -6,5 +8,3 @@ def factorial(num):
         prod *= n
     return prod 
 
-
-print(factorial(5))
