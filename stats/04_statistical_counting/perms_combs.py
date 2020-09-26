@@ -225,8 +225,8 @@ def basketball_combs_samp(team_size=21, num_players=5):
 
     return combinations
 
-team_size = 5
-num_players = 3
+team_size = 21
+num_players = 5
 print(comb(team_size, num_players))
 print(len(basketball_combs_samp(team_size, num_players)))
 
