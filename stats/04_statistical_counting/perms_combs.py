@@ -146,5 +146,7 @@ Code the comb(n, k)
 def comb(n, k):
     return int(factorial(n) / ((factorial(n-k) * factorial(k))))
 
+''' how many 5 card combinations from a 52 card deck '''
+# print(comb(52, 5)) # 2598960
 
-print(comb(52, 5)) # 2598960.0
+
