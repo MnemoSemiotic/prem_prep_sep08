@@ -99,5 +99,24 @@ for an_number in animals_perms:
 
 # print(len(animals_perms))
 
+'''
+Breakout Slide 15
+
+There are ten participants in a road race. Gold, silver, and bronze medals will be given to first, second, and third place finishers. How many possible ways could the medals be handed out? 
+10*9*8...
+--------
+7 * 6 * 5 ...
+
+
+
+'''
+print(perm(10, 3)) # 720
+
+'''
+
+Given that the outcome of the race is determined by chance, and each runner has a unique bib number between one and ten; what is the probability that the runners with bib numbers 1, 2, and 3 finish first, second, and third, respectively?
+
+Assume that there is a world-record holder amongst the runners in the race which is guaranteed to win, how many permutations are there for the silver and bronze medals?
+'''
 
 
