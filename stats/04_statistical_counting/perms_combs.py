@@ -95,4 +95,5 @@ for an_number in animals_counting:
 for an_number in animals_perms:
     print(an_number)
 
-print(len(animals_perms))
+# print(len(animals_perms))
+
