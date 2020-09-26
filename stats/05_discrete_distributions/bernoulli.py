@@ -39,6 +39,9 @@ How many ways can you arrange 2 1s in 5-bit binary?
 10001
 00110
 01010
+
+The Binomial Distribution Question:
+If you have n Bernoulli trials in a row, what is the probability that k of them are successful?
 ...
 
 '''
