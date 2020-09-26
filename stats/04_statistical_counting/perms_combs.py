@@ -160,4 +160,7 @@ Given that there are 120 attendees at a combinatorics convention, 10 attendees w
 Out of a set of 21 basketball players, only 5 can be on the court at any given time. What are all the combinations possible for that basketball team?
 '''
 
-print(comb(21, 5))
+num_combs = comb(21, 5) # 20349
+
+def basketball_combs():
+    
