@@ -129,3 +129,17 @@ Assume that there is a world-record holder amongst the runners in the race which
 '''
 
 # print(perm(9, 2))
+
+
+
+'''
+Combinations
+- use if order doesn't matter
+- think of this as a subset of permutations
+
+nCk = n! / ((n - k)! k!)
+'''
+
+'''
+Code the comb(n, k)
+'''
