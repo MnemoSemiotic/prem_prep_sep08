@@ -46,3 +46,7 @@ Code the permutations(n, k) function.
 
 P(n, k) = n! / (n - k)!
 '''
+def perm(n, k):
+    return int(factorial(n) / factorial(n-k))
+
+# print(perm(10, 4))
