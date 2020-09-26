@@ -220,11 +220,11 @@ def basketball_combs_samp(team_size=21, num_players=5):
         player_comb = sorted(player_comb)
 
         if player_comb not in combinations:
-            # print(player_comb)
+            print(player_comb)
             combinations.append(player_comb)
 
     return combinations
 
-team_size = 11
-print(len(basketball_combs_samp(team_size, num_players=5)))
-print(len(list(set(basketball_combs_samp(team_size, num_players=5)))))
+team_size = 5
+print(len(basketball_combs_samp(team_size, num_players=3)))
+print(len(list(set(basketball_combs_samp(team_size, num_players=3)))))
