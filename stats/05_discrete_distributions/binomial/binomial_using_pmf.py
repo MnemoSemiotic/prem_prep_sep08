@@ -8,3 +8,6 @@ def factorial(n):
 
 # print(factorial(5))
 
+def combinations(n, k):
+    return int(factorial(n) / (factorial(n - k) * factorial(k)))
+
