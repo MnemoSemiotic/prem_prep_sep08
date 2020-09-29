@@ -30,7 +30,11 @@ Y_3 = choice(die_possibilities)
 # print(Y_2)
 # print(Y_3)
 
-
+'''
+X is a random variable that follows these rules:
+X = 1 if the roll of a 6-sided die has an even count of pips
+X = 0 if the roll of a 6-sided die has an odd count of pips
+'''
 
 
 '''
