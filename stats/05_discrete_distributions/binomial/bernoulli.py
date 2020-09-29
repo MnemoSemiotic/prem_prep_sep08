@@ -1,3 +1,7 @@
+
+
+
+
 '''
 Bernoulli trial (aka distribution)
 
