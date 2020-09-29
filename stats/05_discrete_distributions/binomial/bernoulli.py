@@ -35,6 +35,12 @@ X is a random variable that follows these rules:
 X = 1 if the roll of a 6-sided die has an even count of pips
 X = 0 if the roll of a 6-sided die has an odd count of pips
 '''
+def get_X():
+    if choice(die_possibilities) % 2 == 0:
+        return 1
+    else:
+        return 0
+
 
 
 '''
