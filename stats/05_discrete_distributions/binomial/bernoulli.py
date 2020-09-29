@@ -62,8 +62,24 @@ def get_Z():
 
     return outcomes
 
-print(get_Z())
+def analyze_Z():
+    outcomes = get_Z()
+    d = dict()
 
+    for outcome in outcomes:
+        if outcome not in d:
+            d[outcome] = 0
+        d[outcome] += 1
+    
+    return d
+
+z_dict = analyze_Z()
+
+for k, v in sorted(z_dict.items()):
+    print(f'{k}: {v}')
+
+
+    
 
 
 '''
