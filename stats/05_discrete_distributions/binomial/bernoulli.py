@@ -1,3 +1,24 @@
+'''
+Random Variable
+* results of some experiment
+    * consider every potential outcome of an experiment
+    * imagine running that experiment quasi-infinite number of times
+        * should arrive at some set of parameters that define the distribution of the outcomes of that Random Variable
+        * flip a coin an infinite - 1 number of times, if you divide the number of outcomes of Heads by infinite - 1, then you should have ~0.5
+
+'''
+
+'''
+Consider a random variable Y.
+    Y represents the outcome of a single roll of a 6-sided die
+    Y = {1, 2, 3, 4, 5, 6}
+
+What is the probability that Y has an even outcome?
+0.5
+'''
+
+from random import choice
+
 
 
 
