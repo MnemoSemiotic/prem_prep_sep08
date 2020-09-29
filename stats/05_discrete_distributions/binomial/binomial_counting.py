@@ -61,3 +61,15 @@ def dec_to_bin(dec, n_bits=8):
 
 # print(dec_to_bin(43))  # [0, 0, 1, 0, 1, 0, 1, 1]
 
+
+
+def get_binary(n_bits=8):
+    bins_d = dict()
+
+    for dec in range(2**n_bits):
+        bins_d[dec] = dec_to_bin(dec, n_bits)
+
+    return bins_d
+
+for dec, bin_ in get_binary().items():
+    print(f'{dec}: {bin_}')
