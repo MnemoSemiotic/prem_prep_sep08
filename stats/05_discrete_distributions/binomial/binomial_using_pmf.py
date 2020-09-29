@@ -29,7 +29,7 @@ def binomial_pmf(n, k, p=0.5):
 '''
 "What is the probability in 12 coin flips of a fair coin, that you get 7 heads?"
 '''
-binomial_pmf(12, 7, p=0.5)
+print(binomial_pmf(12, 7, p=0.5)) # 0.193359375
 
 
 '''
