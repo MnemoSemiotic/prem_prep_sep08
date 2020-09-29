@@ -90,3 +90,8 @@ def binomial_distr(n_trials=8):
         binomial_dict[sum_bits] += 1
     
     return binomial_dict
+
+d = binomial_distr(n_trials=12)
+
+for k, v in d.items():
+    print(f'{k}: {v}')
