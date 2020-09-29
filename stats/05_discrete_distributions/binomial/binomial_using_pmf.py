@@ -30,5 +30,5 @@ PMF: Probability Mass Function
 
 
 def binomial_pmf(n, k):
-    pass
+    return combinations(n, k) * (p**k) * (1-p)**(n-k)
 
