@@ -34,12 +34,32 @@ Y_3 = choice(die_possibilities)
 X is a random variable that follows these rules:
 X = 1 if the roll of a 6-sided die has an even count of pips
 X = 0 if the roll of a 6-sided die has an odd count of pips
+
+What is the P(X=0)?
+0.5
 '''
 def get_X():
     if choice(die_possibilities) % 2 == 0:
         return 1
     else:
         return 0
+
+
+'''
+Consider a random variable Z.
+
+Z is the result of summing the rolls of 1 6-sided die, 1 4-sided die, and 1 12-sided die.
+
+What is the probability that Z is less than 10?
+'''
+def get_Z():
+    outcomes = []
+
+    for r1 in range(1,6+1):
+        for r2 in range(1,4+1):
+            for r3 in range(1,12+1):
+                outcomes.append(sum([r1, r2, r3]))
+
 
 
 
