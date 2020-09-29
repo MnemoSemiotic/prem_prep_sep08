@@ -1,3 +1,5 @@
+from random import choice, random
+
 '''
 Random Variable
 * results of some experiment
@@ -17,8 +19,16 @@ What is the probability that Y has an even outcome?
 0.5
 '''
 
-from random import choice
+# roll a die
+die_possibilities = [1,2,3,4,5,6]
 
+Y_1 = choice(die_possibilities) # <- single experiment
+Y_2 = choice(die_possibilities)
+Y_3 = choice(die_possibilities)
+
+# print(Y_1)
+# print(Y_2)
+# print(Y_3)
 
 
 
@@ -34,7 +44,6 @@ what is the probability that you'll get tails?
 0.1
 '''
 
-from random import random
 def bernoulli(p_success=0.5):
     draw = random()
     
