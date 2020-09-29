@@ -60,6 +60,9 @@ def get_Z():
             for r3 in range(1,12+1):
                 outcomes.append(sum([r1, r2, r3]))
 
+    return outcomes
+
+print(get_Z())
 
 
 
