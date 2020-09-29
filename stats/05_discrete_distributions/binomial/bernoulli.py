@@ -75,16 +75,15 @@ def analyze_Z():
 
 z_dict = analyze_Z()
 
-# display counts
+# # display counts
 # for k, v in sorted(z_dict.items()):
 #     print(f'{k}: {v}')
 
-# display probas
-for k, v in sorted(z_dict.items()):
-    print(f'{k}: {v / sum(z_dict.values())}')
+# # display probas
+# for k, v in sorted(z_dict.items()):
+#     print(f'{k}: {v / sum(z_dict.values())}')
 
     
-
 
 '''
 Bernoulli trial (aka distribution)
@@ -134,5 +133,62 @@ You flip a coin 20 times. What is the probability that get 14 heads out of 20 fl
 0000001111111111111...
 1111111100000000.....
 ...
+
+'''
+
+
+
+'''
+How to count in Binary
+
+consider decimal
+00
+01
+02
+03
+..
+09
+10
+11
+12
+..
+99
+00
+
+no different for binary
+0: 0000
+1: 0001
+2: 0010
+3: 0011
+4: 0100
+5: 0101
+6: 0110
+7: 0111
+8: 1000
+9: 1001
+10:1010
+11:1011
+12:1100
+13:1101
+14:1110
+15:1111
+
+can think a binary number as being a series of successes and failures
+1 1 0 0
+S S F F  -> 2 successes
+
+The count of 1's in 4 bit-binary will follow a binomial distribution
+
+0: *
+1: ****
+2: ******
+3: ****
+4: * 
+
+0: 1/16
+1: 4/16
+2: 6/16
+3: 4/16
+4: 1/16
 
 '''
