@@ -75,9 +75,13 @@ def analyze_Z():
 
 z_dict = analyze_Z()
 
-for k, v in sorted(z_dict.items()):
-    print(f'{k}: {v}')
+# display counts
+# for k, v in sorted(z_dict.items()):
+#     print(f'{k}: {v}')
 
+# display probas
+for k, v in sorted(z_dict.items()):
+    print(f'{k}: {v / sum(z_dict.values())}')
 
     
 
