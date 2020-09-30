@@ -163,5 +163,5 @@ def binomial_pmf_dict(n, k_low, k_high, p=0.5):
     
     return d
 
-for k, v in binomial_pmf_dict(8, 0, 8, p=0.25).items():
+for k, v in binomial_pmf_dict(8, 0, 8, p=0.37).items():
     print(f'{k}: {v}')
