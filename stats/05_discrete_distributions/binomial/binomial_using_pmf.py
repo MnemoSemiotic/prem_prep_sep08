@@ -54,6 +54,14 @@ On any weekday morning, a certain bus route has 10 buses in operation. If the pr
 # print(binomial_pmf(12, 2, p=0.15))
 
 
+'''
+There are 30 cars in a used car lot. At any given time, there's a 60% chance that each car is working as-is. What is the probability that the 10 cars the dealer sold today are working?
+'''
+# Given the constraints:
+#   The sale of any given car is not dependent on the person starting the car
+#   Time of day/year is irrelevant
+print(0.6**10)
+print(binomial_pmf(10, 10, p=0.60))
 
 '''
 CDF:
