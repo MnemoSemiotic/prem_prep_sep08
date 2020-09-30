@@ -19,3 +19,15 @@ Write a function called binary_sampling_dict that has two parameters
 
 return a dictionary where the keys represent the number of successes, and the values associated with those keys represent the count of that number of successes occurring
 '''
+def binary_sampling_dict(num_bits=8, num_samples=1000):
+    d = dict()
+
+    for _ in range(num_samples):
+        binary = generate_n_bits(num_bits)
+        sum_bits = sum(binary)
+
+        if sum_bits not in d:
+            d[sum_bits] = 0
+        d[sum_bits] += 1
+
+    return d
