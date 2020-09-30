@@ -109,18 +109,18 @@ def binary_sampling_dict_vary_p(num_bits=8, p=0.5, num_samples=1000):
     return d
 
 ''' one trial of 1000 samples '''
-d = binary_sampling_dict_vary_p(num_bits=12, p=0.25, num_samples=1000)
+# d = binary_sampling_dict_vary_p(num_bits=12, p=0.25, num_samples=1000)
 
-for k, v in sorted(d.items()):
-    print(f'{k}: {v}')
+# for k, v in sorted(d.items()):
+#     print(f'{k}: {v}')
 
 
 ''' 500 trials of 1000 samples '''
-def binary_sampling_clt(n_bits=8, num_samples=1000, num_sample_trials=500):
+def binary_sampling_clt_vary_p(n_bits=8, p=0.5, num_samples=1000, num_sample_trials=500):
     d_out = dict()
 
     for _ in range(num_sample_trials):
-        d = binary_sampling_dict(n_bits, num_samples)
+        d = binary_sampling_dict_vary_p(n_bits, p, num_samples)
 
         for k, v in d.items():
             if k not in d_out:
@@ -132,11 +132,11 @@ def binary_sampling_clt(n_bits=8, num_samples=1000, num_sample_trials=500):
 
     return d_out
 
-# d = binary_sampling_clt(n_bits=8, num_samples=1000, num_sample_trials=500)
+d = binary_sampling_clt_vary_p(n_bits=12, p=0.25, num_samples=1000, num_sample_trials=500)
 
-# for k, v in sorted(d.items()):
-#     # print(f'{k}: {v}') # for counts
-#     print(f'{k}: {v / sum(d.values())}') # for counts
+for k, v in sorted(d.items()):
+    print(f'{k}: {v}') # for counts
+    # print(f'{k}: {v / sum(d.values())}') # for counts
             
 
 
