@@ -65,10 +65,12 @@ print(binomial_pmf(10, 10, p=0.60))
 
 
 '''
-you go to chipotle every Tuesday, there’s 14 workers at chipotle and 7 of them work on Tuesdays. whats the chances you’ll see the same worker at the counter every Tuesday 10 times in a row, if only 3 of them work the counter at any given time?
+you go to chipotle every Tuesday, there’s 14 workers at chipotle and 7 of them work on Tuesdays. whats the chances you’ll see the same worker at the counter 5 out of the next 10 times that you go, if only 3 of them work the counter at any given time?
 '''
+n = 10
+k = 5
 p = 3/7
-print(binomial_pmf(10, 10, p=0.60))
+print(binomial_pmf(10, 5, p=(3/7)))
 
 
 '''
