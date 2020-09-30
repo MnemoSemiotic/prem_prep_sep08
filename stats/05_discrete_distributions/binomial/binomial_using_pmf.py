@@ -44,6 +44,15 @@ You are sitting on a park bench watching geese walk by. There is a probability o
 # print(binomial_pmf(20, 6, p=0.3))
 
 
+'''
+On any weekday morning, a certain bus route has 10 buses in operation. If the probability of any given bus arriving late at a stop is 15% (ha!), and assuming that buses arrive at a given stop independently of each other, what is the likelihood that 2 consecutive buses will arrive late at a given stop?
+'''
+# print(0.15**2)
+# print(binomial_pmf(2, 2, p=0.15))
+
+'''What is the likelihood that 2 in 12 buses will arrive late at a given stop?'''
+# print(binomial_pmf(12, 2, p=0.15))
+
 
 
 '''
