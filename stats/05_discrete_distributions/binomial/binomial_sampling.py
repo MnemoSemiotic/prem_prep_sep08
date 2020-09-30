@@ -109,7 +109,7 @@ def binary_sampling_dict_vary_p(num_bits=8, p=0.5, num_samples=1000):
     return d
 
 ''' one trial of 1000 samples '''
-d = binary_sampling_dict(num_bits=8, p=0.25, num_samples=1000)
+d = binary_sampling_dict_vary_p(num_bits=12, p=0.25, num_samples=1000)
 
 for k, v in sorted(d.items()):
     print(f'{k}: {v}')
