@@ -63,6 +63,14 @@ There are 30 cars in a used car lot. At any given time, there's a 60% chance tha
 print(0.6**10)
 print(binomial_pmf(10, 10, p=0.60))
 
+
+'''
+you go to chipotle every Tuesday, there’s 14 workers at chipotle and 7 of them work on Tuesdays. whats the chances you’ll see the same worker at the counter every Tuesday 10 times in a row, if only 3 of them work the counter at any given time?
+'''
+p = 3/7
+print(binomial_pmf(10, 10, p=0.60))
+
+
 '''
 CDF:
 '''
