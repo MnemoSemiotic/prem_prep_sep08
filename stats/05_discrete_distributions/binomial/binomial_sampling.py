@@ -84,9 +84,9 @@ def generate_n_trials(n=8, p=0.5):
 
     return lst
 
-# verify this is working
-test_trials = 100000
-print(sum([generate_n_trials(12, p=0.25).count(1) for _ in range(test_trials)]) / test_trials)
+# # verify this is working
+# test_trials = 100000
+# print(sum([generate_n_trials(12, p=0.25).count(1) for _ in range(test_trials)]) / test_trials)
 
 '''
 Write a function called binary_sampling_dict that has two parameters
