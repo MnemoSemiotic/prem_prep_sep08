@@ -92,7 +92,7 @@ Cumulative Density Function
 "What is the probability in 12 coin flips of a fair coin, that you get 7 or fewer heads?"
 '''
 
-print(binomial_pmf(12, 7, p=0.5) + binomial_pmf(12, 6, p=0.5) + binomial_pmf(12, 5, p=0.5) + binomial_pmf(12, 4, p=0.5) + binomial_pmf(12, 3, p=0.5) + binomial_pmf(12, 2, p=0.5) + binomial_pmf(12, 1, p=0.5) + binomial_pmf(12, 0, p=0.5)) # 0.80615234375
+# print(binomial_pmf(12, 7, p=0.5) + binomial_pmf(12, 6, p=0.5) + binomial_pmf(12, 5, p=0.5) + binomial_pmf(12, 4, p=0.5) + binomial_pmf(12, 3, p=0.5) + binomial_pmf(12, 2, p=0.5) + binomial_pmf(12, 1, p=0.5) + binomial_pmf(12, 0, p=0.5)) # 0.80615234375
 
 
 def binomial_cdf(n, k_high, p=0.5):
@@ -103,4 +103,9 @@ def binomial_cdf(n, k_high, p=0.5):
 
     return cumulative
 
-print(binomial_cdf(12, 7, p=0.5))
+# print(binomial_cdf(12, 7, p=0.5))
+
+
+'''
+"You have 14 components in a circuit. At any given time, there is a 95% chance that a given component is functioning. What is the probability that 12 or more components are functioning? Assume that each component functions independently of every other."
+'''
