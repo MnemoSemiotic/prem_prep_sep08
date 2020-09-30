@@ -95,11 +95,11 @@ Write a function called binary_sampling_dict that has two parameters
 
 return a dictionary where the keys represent the number of successes, and the values associated with those keys represent the count of that number of successes occurring
 '''
-def binary_sampling_dict(num_bits=8, num_samples=1000):
+def binary_sampling_dict_vary_p(num_bits=8, p=0.5, num_samples=1000):
     d = dict()
 
     for _ in range(num_samples):
-        binary = generate_n_bits(num_bits)
+        binary = generate_n_trials(num_bits, p)
         sum_bits = sum(binary)
 
         if sum_bits not in d:
@@ -109,10 +109,10 @@ def binary_sampling_dict(num_bits=8, num_samples=1000):
     return d
 
 ''' one trial of 1000 samples '''
-d = binary_sampling_dict(num_bits=8, num_samples=1000)
+d = binary_sampling_dict(num_bits=8, p=0.25, num_samples=1000)
 
-# for k, v in sorted(d.items()):
-#     print(f'{k}: {v}')
+for k, v in sorted(d.items()):
+    print(f'{k}: {v}')
 
 
 ''' 500 trials of 1000 samples '''
