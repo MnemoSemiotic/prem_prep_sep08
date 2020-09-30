@@ -84,4 +84,10 @@ k = 5
 
 '''
 CDF:
+Cumulative Density Function
+- cumulative implies "accumulator"
+'''
+
+'''
+"What is the probability in 12 coin flips of a fair coin, that you get 7 or fewer heads?"
 '''
