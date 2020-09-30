@@ -60,7 +60,7 @@ def binary_sampling_clt(n_bits=8, num_samples=1000, num_sample_trials=500):
 
     return d_out
 
-d = binary_sampling_clt(n_bits=8, num_samples=1000, num_sample_trials=500)
+# d = binary_sampling_clt(n_bits=8, num_samples=1000, num_sample_trials=500)
 
 # for k, v in sorted(d.items()):
 #     # print(f'{k}: {v}') # for counts
@@ -84,7 +84,7 @@ def generate_n_trials(n=8, p=0.5):
 
     return lst
 
-print(generate_n_bits(12, p=0.5))
+print(generate_n_trials(12, p=0.5))
 
 '''
 Write a function called binary_sampling_dict that has two parameters
@@ -130,11 +130,11 @@ def binary_sampling_clt(n_bits=8, num_samples=1000, num_sample_trials=500):
 
     return d_out
 
-d = binary_sampling_clt(n_bits=8, num_samples=1000, num_sample_trials=500)
+# d = binary_sampling_clt(n_bits=8, num_samples=1000, num_sample_trials=500)
 
-for k, v in sorted(d.items()):
-    # print(f'{k}: {v}') # for counts
-    print(f'{k}: {v / sum(d.values())}') # for counts
+# for k, v in sorted(d.items()):
+#     # print(f'{k}: {v}') # for counts
+#     print(f'{k}: {v / sum(d.values())}') # for counts
             
 
 
