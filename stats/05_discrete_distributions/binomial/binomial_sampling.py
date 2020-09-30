@@ -35,5 +35,5 @@ def binary_sampling_dict(num_bits=8, num_samples=1000):
 ''' one trial of 1000 samples '''
 d = binary_sampling_dict(num_bits=8, num_samples=1000)
 
-for k, v in sorted(d.items()):
-    print(f'{k}: {v}')
+# for k, v in sorted(d.items()):
+#     print(f'{k}: {v}')
