@@ -60,8 +60,8 @@ There are 30 cars in a used car lot. At any given time, there's a 60% chance tha
 # Given the constraints:
 #   The sale of any given car is not dependent on the person starting the car
 #   Time of day/year is irrelevant
-print(0.6**10)
-print(binomial_pmf(10, 10, p=0.60))
+# print(0.6**10)
+# print(binomial_pmf(10, 10, p=0.60))
 
 
 '''
@@ -70,7 +70,9 @@ you go to chipotle every Tuesday, there’s 14 workers at chipotle and 7 of them
 n = 10
 k = 5
 p = 3/7
-print(binomial_pmf(10, 5, p=(3/7)))
+# print(binomial_pmf(10, 5, p=(3/7)))
+
+
 
 
 '''
