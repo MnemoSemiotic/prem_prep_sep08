@@ -92,4 +92,15 @@ Cumulative Density Function
 "What is the probability in 12 coin flips of a fair coin, that you get 7 or fewer heads?"
 '''
 
-print(binomial_pmf(12, 7, p=0.5) + binomial_pmf(12, 6, p=0.5) + binomial_pmf(12, 5, p=0.5) + binomial_pmf(12, 4, p=0.5) + binomial_pmf(12, 3, p=0.5) + binomial_pmf(12, 2, p=0.5) + binomial_pmf(12, 1, p=0.5) + binomial_pmf(12, 0, p=0.5))
+print(binomial_pmf(12, 7, p=0.5) + binomial_pmf(12, 6, p=0.5) + binomial_pmf(12, 5, p=0.5) + binomial_pmf(12, 4, p=0.5) + binomial_pmf(12, 3, p=0.5) + binomial_pmf(12, 2, p=0.5) + binomial_pmf(12, 1, p=0.5) + binomial_pmf(12, 0, p=0.5)) # 0.80615234375
+
+
+def binomial_cdf(n, k_high, p=0.5):
+    cumulative = 0.0
+
+    for k in range(0, k_high+1):
+        cumulative += binomial_pmf(n, k, p)
+
+    return cumulative
+
+print(binomial_cdf(12, 7, p=0.5))
