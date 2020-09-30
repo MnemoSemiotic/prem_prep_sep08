@@ -153,3 +153,5 @@ Suppose you are building some sort of machine that relies on a specific componen
 # # What is the probability that 1 or more of these components work?
 # print(binomial_pmf(n, 1, p) + binomial_pmf(n, 2, p) + binomial_pmf(n, 3, p))
 # print(1 - binomial_pmf(n, 0, p))
+
+
