@@ -10,4 +10,8 @@ def generate_n_bits(n=8):
 
     return lst
 
-print(generate_n_bits(12))
+# print(generate_n_bits(12))
+
+'''
+Write a function called binary_sampling_dict
+'''
