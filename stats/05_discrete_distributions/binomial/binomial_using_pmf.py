@@ -155,3 +155,11 @@ Suppose you are building some sort of machine that relies on a specific componen
 # print(1 - binomial_pmf(n, 0, p))
 
 
+def binomial_pmf_dict(n, k_low, k_high, p=0.5):
+    d = dict()
+
+    for k in range(k_low, k_high+1):
+        d[k] = binomial_pmf(n, k, p)
+    
+    return d
+
