@@ -84,7 +84,8 @@ def generate_n_trials(n=8, p=0.5):
 
     return lst
 
-print(generate_n_trials(12, p=0.5))
+# verify this is working
+print([generate_n_trials(12, p=0.5).count(1) for _ in range(1000)])
 
 '''
 Write a function called binary_sampling_dict that has two parameters
