@@ -39,5 +39,13 @@ def binomial_pmf(n, k, p=0.5):
 
 
 '''
+You are sitting on a park bench watching geese walk by. There is a probability of 0.3 that any given goose will have feet that are more red than normal. What is the probability that in the next 20 geese you observe, 6 of them will have feet that are more red than usual?
+'''
+# print(binomial_pmf(20, 6, p=0.3))
+
+
+
+
+'''
 CDF:
 '''
