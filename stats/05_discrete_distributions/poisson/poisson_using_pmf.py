@@ -234,15 +234,17 @@ def a_counts_dict():
 
     return d
 
-# for k, v in a_dict().items():
+# for k, v in a_counts_dict().items():
 #     print(f'{k}: {v:}')
 
 
 def a_proba_dict():
     d = a_counts_dict()
 
-    for k, v in d:
+    for k, v in d.items():
         d[k] = v / sum(d.values())
 
-for k, v in a_dict().items():
+    return d
+
+for k, v in a_proba_dict().items():
     print(f'{k}: {v:}')
