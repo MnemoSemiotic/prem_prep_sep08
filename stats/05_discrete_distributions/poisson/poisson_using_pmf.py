@@ -103,4 +103,4 @@ What is the prob that 10 cars pass by in 30 seconds?
 lmbda = 5
 k = 10
 '''
-print(poisson_pmf(5, 10))
+# print(poisson_pmf(5, 10))
