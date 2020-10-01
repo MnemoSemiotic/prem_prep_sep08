@@ -78,12 +78,19 @@ def poisson_pmf(lmbda, k):
 
 '''
 Q1
-During lunch, 7 people on average walk through a store's front door every 7 minutes. What is the probability that 9 people will walk through that door in 7 minutes?
+During lunch, 7 people on average walk through a store's front door every 7 minutes.
+ What is the probability that 9 people will walk through that door in 7 minutes?
 
 lmbda = 7
 k = 9
 '''
 # print(poisson_pmf(7, 9))
+
+'''
+Out of 10000 observations of the given store front, how many of those observations 
+would you expect to have 9 people walk through the door?
+'''
+
 
 '''
 What is the probability that 12 people walk through the front door in 14 minutes?
@@ -159,3 +166,16 @@ d = poisson_cdf_dict(10, 0, 20)
 #     print(f'{k}: {v}')
 
 
+'''
+You are observing a phenomenon that follows perfectly a poisson process.
+Given a certain number of observations (10,000), how many events would 
+you expect for each value of k, given a lmbda of 10, low_k=0, high_k=30?
+'''
+
+def poisson_counts(lmbda, low_k, high_k, num_samples=10000):
+    d = dict()
+
+    for k in range(low_k, high_k):
+        d[k] = round(poisson_pmf(lmbda, k) * num_samples)
+
+    return d
