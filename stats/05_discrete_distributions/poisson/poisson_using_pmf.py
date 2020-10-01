@@ -91,4 +91,16 @@ What is the probability that 12 people walk through the front door in 14 minutes
 lmbda = 14 people
 k = 12 people
 '''
-print(poisson_pmf(14, 12))
+# print(poisson_pmf(14, 12))
+
+
+'''
+Q2
+On average, 20 cars on highway pass by a billboard every 2 minutes during the workday. 
+
+What is the prob that 10 cars pass by in 30 seconds?
+
+lmbda = 5
+k = 10
+'''
+print(poisson_pmf(5, 10))
