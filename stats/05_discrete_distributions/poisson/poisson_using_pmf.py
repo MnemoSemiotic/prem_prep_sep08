@@ -73,5 +73,14 @@ def factorial(n):
 def poisson_pmf(lmbda, k):
     return lmbda**k * e**(-lmbda) / factorial(k)
 
-print(poisson_pmf(10, 10))
-    
+# print(poisson_pmf(10, 10))
+
+
+'''
+Q1
+During lunch, 7 people on average walk through a store's front door every 7 minutes. What is the probability that 9 people will walk through that door in 7 minutes?
+
+lmbda = 7
+k = 9
+'''
+print(poisson_pmf(7, 9))
