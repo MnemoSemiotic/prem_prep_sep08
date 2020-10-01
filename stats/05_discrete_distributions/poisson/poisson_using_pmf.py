@@ -115,3 +115,9 @@ If on average 7 mosquitos bite you every 5 minutes while you're fishing, what is
 print(poisson_pmf(7, 3) + poisson_pmf(7, 2) + poisson_pmf(7, 1) + poisson_pmf(7, 0))
 
 def poisson_cdf(lmbda, high_k):
+    cdf = 0.0
+
+    for k in range(high_k+1):
+        cdf += poisson_pmf(lmbda, k)
+    
+    return cdf
