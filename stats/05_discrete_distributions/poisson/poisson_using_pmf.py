@@ -230,11 +230,11 @@ def a_dict():
     for outcome in outcomes:
         if outcome not in d:
             d[outcome] = 0
-        d[outcome] = 1
+        d[outcome] += 1
 
     return d
 
-for k, v in a_dict.items():
+for k, v in a_dict().items():
     print(f'{k}: {v:}')
 
 
