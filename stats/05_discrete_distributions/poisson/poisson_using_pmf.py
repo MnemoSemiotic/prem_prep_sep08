@@ -247,5 +247,5 @@ def a_proba_dict():
 
     return d_out
 
-for k, v in a_proba_dict().items():
-    print(f'{k}: {v:}')
+# for k, v in a_proba_dict().items():
+#     print(f'{k}: {v:}')
