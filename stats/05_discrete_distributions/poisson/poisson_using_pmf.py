@@ -121,3 +121,5 @@ def poisson_cdf(lmbda, high_k):
         cdf += poisson_pmf(lmbda, k)
     
     return cdf
+
+print(poisson_cdf(lmbda=7, high_k=3))
