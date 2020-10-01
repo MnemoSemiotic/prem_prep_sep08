@@ -214,7 +214,14 @@ Analyze A
 '''
 
 def outcomes_of_A():
-    pass
+    outcomes = []
+
+    for i in range(1, 6+1):
+        for j in range(1, 4+1).
+            outcomes.append(sum([i, j]))
+
+    return outcomes        
+
 
 def a_dict():
     pass
