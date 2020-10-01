@@ -203,3 +203,5 @@ You have a data set from observing a stream where salmon swim by at a rate of 10
 '''
 In a volume of a certain compressed gas that is resampled daily, on average you would expect to observe 20 nitrogenous molecules. What is the probability that you would observe 25 or more of these molecules?
 '''
+# print(1 - poisson_cdf(20, 24))
+
