@@ -182,7 +182,12 @@ def poisson_counts(lmbda, low_k, high_k, num_samples=10000):
 
 d = poisson_counts(10, 0, 30, num_samples=100000)
 
-print(sum(d.values()))
+# print(sum(d.values()))
 
-for k, v in d.items():
-    print(f'{k}: {v / sum(d.values())}')
+# for k, v in d.items():
+#     print(f'{k}: {v / sum(d.values())}')
+
+
+'''
+There's a busy intersection in Denver, on average where 30 cars pass by every 10 minutes. What is the probability that 40 cars will pass by if observing a new ten minute time period?
+'''
