@@ -207,3 +207,18 @@ In a volume of a certain compressed gas that is resampled daily, on average you 
 
 
 
+'''
+random variable A represents the sum of a six-sided die, and a four-sided die
+
+Analyze A
+'''
+
+def outcomes_of_A():
+    pass
+
+def a_dict():
+    pass
+
+def a_proba_dict():
+    pass
+
