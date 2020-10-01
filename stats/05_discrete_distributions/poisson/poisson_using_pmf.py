@@ -245,7 +245,7 @@ def a_proba_dict():
     for k, v in d.items():
         d_out[k] = v / sum(d.values())
 
-    return d
+    return d_out
 
 for k, v in a_proba_dict().items():
     print(f'{k}: {v:}')
