@@ -70,5 +70,8 @@ def factorial(n):
 
     return prod
 
-def poisson_pmf():
-    pass
+def poisson_pmf(lmbda, k):
+    return lmbda**k * e**(-lmbda) / factorial(k)
+
+print(poisson_pmf(10, 10))
+    
