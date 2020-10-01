@@ -125,3 +125,11 @@ def poisson_cdf(lmbda, high_k):
 # print(poisson_cdf(lmbda=7, high_k=3))
 
 
+'''
+apply a dict to analyze the poisson pmf
+
+keys will be the values of k
+the values will be the probabilities associated with that k
+'''
+def poisson_pmf_dict(lmbda, low_k, high_k):
+    pass
