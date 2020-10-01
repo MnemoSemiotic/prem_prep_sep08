@@ -223,7 +223,7 @@ def outcomes_of_A():
     return outcomes        
 
 
-def a_dict():
+def a_counts_dict():
     d = {}
     outcomes = outcomes_of_A()
 
@@ -234,10 +234,15 @@ def a_dict():
 
     return d
 
-for k, v in a_dict().items():
-    print(f'{k}: {v:}')
+# for k, v in a_dict().items():
+#     print(f'{k}: {v:}')
 
 
 def a_proba_dict():
-    pass
+    d = a_counts_dict()
 
+    for k, v in d:
+        d[k] = v / sum(d.values())
+
+for k, v in a_dict().items():
+    print(f'{k}: {v:}')
