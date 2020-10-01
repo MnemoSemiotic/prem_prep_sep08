@@ -1,3 +1,5 @@
+from math import e
+
 '''
 You have a coin with which you are 2 times more likely to get a heads than a tails. 
 h = 2t
@@ -68,4 +70,5 @@ def factorial(n):
 
     return prod
 
-print(factorial(5))
+def poisson_pmf():
+    pass
