@@ -217,14 +217,26 @@ def outcomes_of_A():
     outcomes = []
 
     for i in range(1, 6+1):
-        for j in range(1, 4+1).
+        for j in range(1, 4+1):
             outcomes.append(sum([i, j]))
 
     return outcomes        
 
 
 def a_dict():
-    pass
+    d = {}
+    outcomes = outcomes_of_A()
+
+    for outcome in outcomes:
+        if outcome not in d:
+            d[outcome] = 0
+        d[outcome] = 1
+
+    return d
+
+for k, v in a_dict.items():
+    print(f'{k}: {v:}')
+
 
 def a_proba_dict():
     pass
