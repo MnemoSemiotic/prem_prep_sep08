@@ -240,9 +240,10 @@ def a_counts_dict():
 
 def a_proba_dict():
     d = a_counts_dict()
+    d_out = dict()
 
     for k, v in d.items():
-        d[k] = v / sum(d.values())
+        d_out[k] = v / sum(d.values())
 
     return d
 
