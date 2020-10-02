@@ -36,7 +36,7 @@ def geometric(p=0.5):
 
 # print(geometric(p=0.05))
 
-def geometric_samples_dict(p=0.5, num_samples):
+def geometric_samples_dict(p=0.5, num_samples=10000):
     d = dict()
 
     for _ in range(num_samples):
