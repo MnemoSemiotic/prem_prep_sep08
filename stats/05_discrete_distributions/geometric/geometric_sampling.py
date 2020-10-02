@@ -18,4 +18,20 @@ def perform_geometric(p=0.5):
     
     print(f'Success on the {num_trials+1} trial!')
 
-perform_geometric(p=0.05)
+# perform_geometric(p=0.05)
+
+
+def geometric(p=0.5):
+    # num of failures prior to the first success
+    lst = []
+
+    for _ in range(1000000000):
+        trial = bernoulli(p)
+        lst.append(trial)
+
+        if trial == 1:
+            break
+
+    return len(lst) - 1
+
+print(geometric(p=0.5))
