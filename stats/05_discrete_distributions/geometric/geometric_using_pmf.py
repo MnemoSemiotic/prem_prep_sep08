@@ -13,3 +13,14 @@ k will represent the # of failures (inclusive or exclusive of the first success)
 
 You are handing out fliars for a show. The probability of someone accepting a fliar is 0.65. What is the probability that the first person who accepts a fliar is the 3rd person you offer a fliar?
 '''
+
+
+'''
+Write the geometric_pmf function. 
+This will 3 parameters:
+p : probability
+k : number of failure (inclusive or exclusive of the 1st success)
+inclusive=True : whether or not to use the inclusive or exclusive form
+'''
+def geometric_pmf(p, k, inclusive=True):
+    pass
