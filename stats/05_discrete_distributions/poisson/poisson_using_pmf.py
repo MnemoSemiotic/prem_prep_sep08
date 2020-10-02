@@ -249,24 +249,3 @@ def a_proba_dict():
 
 # for k, v in a_proba_dict().items():
 #     print(f'{k}: {v:}')
-
-
-def factorial(n):
-  prod = 1
-  for num in range(1, n+1):
-    prod *= num
-  return prod
-from math import e 
-def poisson_pmf(lmbda, k):
-  return ((lmbda**k) * e**(-lmbda))/factorial(k)
-print(poisson_pmf(10, 10))
-
-
-def poisson_counts(lmbda, low_k, high_k, num_samples=10000):
-  d = dict()
-  for k in range(low_k, high_k):
-    d[k] = round(poisson_pmf(lmbda, k) * num_samples)
-  return d 
-d = poisson_counts(10, 0, 30, num_samples=10000)
-for k, v in d.items():
-  print(f'{k}:{v/sum(d.values())}')
