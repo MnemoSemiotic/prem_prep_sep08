@@ -27,11 +27,34 @@ Differentiating Binomial, Poisson, Geometric, and basic probability
 '''
 # Binomial
 # What is the probability that some number out of some number of events is successful?
+
 # p=0.7, n_trial = 5, what is the proba that 3 of the 5 trials are successful?
+
 
 # Poisson
 # On average, some number of events happens in this volume (of time, space, etc). 
+
 # What is the probability of some (other) number of events happens in this volume or 
 # some expansion/contraction of this volume?
 # On avg 14 events occur in 5 minutes, what is the probability that 20 events occur 
 # in 8 minutes?
+
+
+# Geometric
+# The proba of some binary event is p. What is the probability of having your first
+# success on the nth trial?
+
+# The p of success is 0.21. What is the probability of having 4 failures before the
+# first success?
+
+
+# Basic Probability
+# The probability of some event is p_0. The probability of another, independent event is p_1
+# What is the probability of both events occurring? p_0 * p_1
+
+# The probability of getting heads on a certain coin is 0.83. What is the probability of 
+# getting 0 heads in 5 flips? 
+print(0.17**5)
+
+# What is the probability of getting at least one heads in 5 flips?
+
