@@ -64,3 +64,12 @@ def geom_cdf_accum(p, k, inclusive=True):
         proba_ += geometric_pmf(p, r, inclusive)
 
     return proba_
+
+'''
+You are flipping a fair coin. What is the probability that
+you get your first heads before or on the 7th flip?
+'''
+# print(geom_cdf_closed(0.5, 7, inclusive=True))
+# print(geom_cdf_closed(0.5, 6, inclusive=False))
+# print(geom_cdf_accum(0.5, 7, inclusive=True))
+# print(geom_cdf_accum(0.5, 6, inclusive=False))
