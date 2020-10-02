@@ -28,3 +28,7 @@ def geometric_pmf(p, k, inclusive=True):
     else:
         return p * (1-p)**k 
 
+'''
+You are flipping a fair coin. What is the probability that
+you get your first heads on the 7th flip?
+'''
