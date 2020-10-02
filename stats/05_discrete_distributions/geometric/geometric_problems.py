@@ -54,7 +54,7 @@ Differentiating Binomial, Poisson, Geometric, and basic probability
 
 # The probability of getting heads on a certain coin is 0.83. What is the probability of 
 # getting 0 heads in 5 flips? 
-print(0.17**5)
+print(0.17**5) # ~ 0.000142
 
 # What is the probability of getting at least one heads in 5 flips?
-
+print(1 - 0.17**5)
