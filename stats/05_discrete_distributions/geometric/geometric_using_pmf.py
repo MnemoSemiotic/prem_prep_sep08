@@ -23,4 +23,8 @@ k : number of failure (inclusive or exclusive of the 1st success)
 inclusive=True : whether or not to use the inclusive or exclusive form
 '''
 def geometric_pmf(p, k, inclusive=True):
-    pass
+    if inclusive:
+        return p * (1-p)**(k-1) 
+    else:
+        return p * (1-p)**k 
+
