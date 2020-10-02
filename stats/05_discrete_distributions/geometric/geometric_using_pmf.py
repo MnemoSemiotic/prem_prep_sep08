@@ -32,3 +32,7 @@ def geometric_pmf(p, k, inclusive=True):
 You are flipping a fair coin. What is the probability that
 you get your first heads on the 7th flip?
 '''
+# print(geometric_pmf(0.5, 7, inclusive=True))
+# print(geometric_pmf(0.5, 6, inclusive=False))
+
+
