@@ -69,3 +69,14 @@ d = geometric_samples_proba_dict(p=0.05, num_samples=10000)
 
 # for k, v in sorted(d.items()):
 #     print(f'{k}: {v}')
+
+
+
+def poisson_counts(lmbda, low_k, high_k, num_samples=10000):
+  d = dict()
+  for k in range(low_k, high_k):
+    d[k] = round(poisson_pmf(lmbda, k) * num_samples)
+  return d 
+d = poisson_counts(10, 0, 30, num_samples=10000)
+for k, v in d.items():
+  print(f'{k}:{v/sum(d.values())}')
