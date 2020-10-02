@@ -58,3 +58,11 @@ print(0.17**5) # ~ 0.000142
 
 # What is the probability of getting at least one heads in 5 flips?
 print(1 - 0.17**5)
+
+# 00000 <-- all failures
+
+# 00001 <-- everything else
+# 00010
+# 00011
+# ...
+# 11111
