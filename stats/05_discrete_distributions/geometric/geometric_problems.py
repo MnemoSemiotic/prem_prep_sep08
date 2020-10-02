@@ -66,3 +66,9 @@ print(1 - 0.17**5)
 # 00011
 # ...
 # 11111
+
+
+
+# for some more review:
+#   https://www.statlect.com/probability-distributions/
+#   https://www.jbstatistics.com/
