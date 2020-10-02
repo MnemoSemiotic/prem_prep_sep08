@@ -14,8 +14,8 @@ def perform_geometric(p=0.5):
         num_trials += 1
         if flip == 1:
             break
-        print(f'trial: {flip}')
+        # print(f'trial: {flip}')
     
-    print(f'Success! after {num_trials} trials!')
+    print(f'Success on the {num_trials+1} trial!')
 
-print(perform_geometric(p=0.05))
+perform_geometric(p=0.05)
