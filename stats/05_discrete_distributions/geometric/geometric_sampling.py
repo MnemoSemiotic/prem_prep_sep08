@@ -67,5 +67,5 @@ def geometric_samples_proba_dict(p=0.5, num_samples=10000):
 
 d = geometric_samples_proba_dict(p=0.05, num_samples=10000)
 
-for k, v in sorted(d.items()):
-    print(f'{k}: {v}')
+# for k, v in sorted(d.items()):
+#     print(f'{k}: {v}')
