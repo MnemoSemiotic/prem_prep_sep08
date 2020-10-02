@@ -46,3 +46,8 @@ A roofer hits their thumb with a hammer 1/1000 times when they swing the hammer.
 Geometric cdf
 '''
 def geom_cdf_closed(p, k, inclusive=True):
+    if inclusive:
+        return 1 - (1-p)**k
+    else:
+        return 1 - (1-p)**(k+1)
+
