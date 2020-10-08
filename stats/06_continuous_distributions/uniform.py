@@ -47,8 +47,9 @@ def get_float(n=8):
 
     float_accum = 0.0
 
-    for idx, bit in enumeration(bin_list, 1):
+    for idx, bit in enumerate(bin_list, 1):
         float_accum += bit * 0.5**idx
 
     return float_accum
 
+print(get_float(32))
