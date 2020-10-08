@@ -59,11 +59,13 @@ def get_range(n=8, num_samples=10000):
     low = get_float(n)
 
     for _ in range(num_samples):
-        flt = get_float(n)
-        if flt > high:
-            high = flt
-        if flt < low:
-            low = flt
+        flt_high = get_float(n)
+        flt_low = get_float(1)
+
+        if flt_high > high:
+            high = flt_high
+        if flt_low < low:
+            low = flt_low
     return low, high
 
 print(get_range(n=32, num_samples=10000))
