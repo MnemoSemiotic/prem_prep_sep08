@@ -78,3 +78,16 @@ Will the upper bound of our range be inclusive or exclusive of 1? Why?
 '''
 What is the probability of getting a random float of less than 0.752?
 '''
+
+def sample_from_random_flt(thresh, num_samples=100000):
+    d = dict()
+
+    d[f'<= {thresh}'] = 0
+    d[f'> {thresh}'] = 0
+
+    for _ in range(num_samples):
+        flt = get_float(32)
+        if flt > thresh:
+            d[f'> {thresh}'] += 1
+        else:
+            d[f'<= {thresh}'] += 1
