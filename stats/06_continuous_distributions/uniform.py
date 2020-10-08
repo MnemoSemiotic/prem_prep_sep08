@@ -22,3 +22,11 @@ CDF
 to get the Proba of getting less than a given value
 can also subtract two cdfs to get the probability of a range of values, thus discretizing our continuous distribution
 '''
+
+
+
+
+from random import choice
+
+def get_bit():
+    return choice([0,1])
