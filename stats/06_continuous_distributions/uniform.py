@@ -70,3 +70,11 @@ def get_range(n=8, num_samples=10000):
 
 # print(get_range(n=32, num_samples=10000))
 
+'''
+Will the upper bound of our range be inclusive or exclusive of 1? Why?
+'''
+
+
+'''
+What is the probability of getting a random float of less than 0.752?
+'''
