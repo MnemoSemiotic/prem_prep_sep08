@@ -14,11 +14,11 @@ def normal_cdf(x=0, mu=0, sigma=2):
 
     for val in vals:
         res = normal_pdf(val, mu, sigma)
-        accum += res
+        area_accum += res
 
         if val > x:
             break
 
     return area_accum*0.001
 
-print(normal_cdf())
+print(1 - normal_cdf(x=100, mu=90, sigma=10))
