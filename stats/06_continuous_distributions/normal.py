@@ -23,4 +23,13 @@ def normal_cdf(x=0, mu=0, sigma=2):
 
     return area_accum*0.001
 
-print(1 - normal_cdf(x=100, mu=90, sigma=10))
+# print(1 - normal_cdf(x=100, mu=90, sigma=10))
+
+
+'''
+Normal distr breakout 2
+'''
+mu = 50
+sigma = 15
+
+print(normal_cdf(70, 50, 15) - normal_cdf(50, 50, 15))
