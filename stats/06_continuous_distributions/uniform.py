@@ -66,4 +66,4 @@ def get_range(n=8, num_samples=10000):
             low = flt
     return low, high
 
-print(get_range(n=8, num_samples=10000))
+print(get_range(n=32, num_samples=10000))
