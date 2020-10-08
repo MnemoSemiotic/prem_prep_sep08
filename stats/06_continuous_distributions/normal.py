@@ -32,4 +32,4 @@ Normal distr breakout 2
 mu = 50
 sigma = 15
 
-print(normal_cdf(70, 50, 15) - normal_cdf(50, 50, 15))
+print(normal_cdf(70, 50, 15) - normal_cdf(50, 50, 15)) # ~0.4088
