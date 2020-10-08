@@ -95,8 +95,8 @@ def sample_from_random_flt(thresh, num_samples=100000):
     return d
 
 num_samples = 100000
-thresh=0.752
+thresh = 0.752
 
 d = sample_from_random_flt(thresh, num_samples)
 
-print()
+print(d[f'<= {thresh}'] / num_samples)
