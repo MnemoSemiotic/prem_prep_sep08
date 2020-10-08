@@ -5,10 +5,12 @@ def normal_pdf(x, mu, sigma):
 
 
 def normal_cdf(x=0, mu=0, sigma=2):
-    vals = []
+    vals = [num*0.001 for num in range(-10000, int(x*1000)+1)]
+
+    # vals = []
     
-    for num in range(-10000, int(x*1000)):
-        vals.append(num*0.001)
+    # for num in range(-10000, int(x*1000)):
+    #     vals.append(num*0.001)
 
     area_accum = 0.0
 
