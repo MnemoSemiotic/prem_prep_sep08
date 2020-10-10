@@ -82,6 +82,19 @@ k = 50
 # print((20/50)**50)
 # # 1.2676506002282329e-20
 
+
+
+'''
+you are at the bus stop and 4 out of every 15 buses that pass by have a subway add, if you watch 30 buses pass by what are the chances that 12 of them will have a subway add?
+
+p = 4/15
+n = 30
+k = 12
+'''
+print(binomial_pmf(n=30, k=12, p=(4/15)))
+
+
+
 '''
 
 Poisson textbook problems
