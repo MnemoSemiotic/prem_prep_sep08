@@ -53,11 +53,19 @@ def binomial_pmf(n, k, p=0.5):
     return combinations(n, k) * (p**k) * ((1-p)**(n-k))
 
 
-print(binomial_pmf(n=20, k=10, p=(2/13)))
+# print(binomial_pmf(n=20, k=10, p=(2/13)))
+# 0.000258
 
 
+'''
+you are sitting on a bench holding ten boxes of chocolates. your boxes of chocolates have 7 caramel, 10 coconut, and 5 toffee in each.  what are the odds you pick 10 chocolates from 10 different boxes of chocolates and get 5 caramel filled chocolates?
 
-
+total_choc = 22
+p_caramel = 7/22
+k = 5
+n = 10
+'''
+print(binomial_pmf(n=10, k=5, p=(7/22)))
 
 
 
