@@ -332,5 +332,5 @@ for outcome in outcomes_A:
         d[outcome] = 0
     d[outcome] += 1
 
-for outcome, count in in sorted(d.items()):
+for outcome, count in sorted(d.items()):
     print(f'{outcome}: {count}')
