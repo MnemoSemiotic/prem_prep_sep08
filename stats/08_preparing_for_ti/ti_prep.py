@@ -172,6 +172,17 @@ You go for a walk every day at noon. On a 30 minute walk, on avg, you see 3 magp
 # print(poisson_pmf(lmbda, k))
 # # ~0.0445
 
+'''
+On average, over the course of 365 days there are 300 lightning strikes observed within a particular national forest. Assuming that strikes occur evenly throughout the year, what is the probability that for the month July, there will be more than 50 observed strikes? 
+'''
+lmbda = 300 * 31/365
+k_high = 50
+
+accum = 0.0
+for k in range(0, k_high):
+    accum += poisson_pmf(lmbda, k)
+
+print(1 - accum)
 
 
 '''
