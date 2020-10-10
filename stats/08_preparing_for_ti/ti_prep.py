@@ -150,10 +150,10 @@ if on average 3 mosquitos bite you every 30 min while you’re fishing, what is 
 '''
 you eat (on avg) 10 chocolates per hour.  what is the probably you eat 20 chocolates in 45 minutes from your 10 boxes of chocolates
 '''
-lmbda = 10 * (3/4)
-k = 20
-print(poisson_pmf(lmbda, k))
-
+# lmbda = 10 * (3/4)
+# k = 20
+# print(poisson_pmf(lmbda, k))
+# # 7.209282379462172e-05
 
 
 
