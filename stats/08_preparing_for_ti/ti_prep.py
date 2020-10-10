@@ -237,18 +237,24 @@ p_Z_2 = (out.count(2) / len(out))
 
 
 
-
-
-
-
-
-
-
 '''
 
 Coding Mathematical Formulations
 
+
 '''
+
+'''
+A is the result of rolling a 4-sided die 5 times, and processing
+it through a function:
+
+sum of each die roll multiplied by 4 over the positional value of that die (indexed starting at 1)
+
+SUM(i=1 to n=5) { roll_i * (4/i) } 
+
+'''
+def roll_math(lst):
+    pass
 
 
 '''
