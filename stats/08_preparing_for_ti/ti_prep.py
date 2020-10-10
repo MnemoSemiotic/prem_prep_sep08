@@ -358,7 +358,7 @@ def analyze_outcomes(n=5, num_samples=10000):
     d = dict()
 
     for _ in range(num_samples):
-        roll_result = roll_die_n_times(n):
+        roll_result = roll_die_n_times(n)
         res, roll = roll_math(roll_result)
 
         k = f'{int(res)} <= a < {int(res) + 1}'
@@ -374,7 +374,7 @@ def analyze_outcomes(n=5, num_samples=10000):
 
 d = analyze_outcomes(n=5, num_samples=10000)
 
-# for outcome, val in sorted(d.items()):
-#     print(f'{outcome}: {val[0]}')
-#     for lst in val[1]:
-#         print(f'\t{lst}')
+for outcome, val in sorted(d.items()):
+    print(f'{outcome}: {val[0]}')
+    # for lst in val[1]:
+    #     print(f'\t{lst}')
