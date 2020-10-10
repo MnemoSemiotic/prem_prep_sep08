@@ -288,9 +288,9 @@ le_18 = []
 gt_12 = []
 
 for outcome in outcomes_A:
-    if outcome <= 18:
+    if outcome[0] <= 18:
         le_18.append(outcome)
-    if outcome > 12:
+    if outcome[0] > 12:
         gt_12.append(outcome)
 
 # print(len(le_18) / len(outcomes_A)) # ~0.21
