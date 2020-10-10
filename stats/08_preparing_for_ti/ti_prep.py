@@ -103,10 +103,12 @@ n = 17
 k = 8
 
 '''
-print(binomial_pmf(n=17, k=8, p=(2/5)))
+# print(binomial_pmf(n=17, k=8, p=(2/5)))
 
 
-
+'''
+You are looking for the stray cats (no name tag cats) in your neighborhood. On average, three out of every 20 cats have no name tags walk through your house. What is the probability that, in one particular set of observations, five no name tag cats out of 10 cats walk by your house?
+'''
 
 
 
