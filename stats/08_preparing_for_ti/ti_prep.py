@@ -167,9 +167,12 @@ You go for a walk every day at noon. On a 30 minute walk, on avg, you see 3 magp
 '''
 10 dogs are saved from the shelter every 8 hours on average. What is the probability that 25 dogs would be saved in 16 hours?
 '''
-lmbda 10 * 2
-k = 25
-print(poisson_pmf(lmbda, k))
+# lmbda = 10 * 2
+# k = 25
+# print(poisson_pmf(lmbda, k))
+# # ~0.0445
+
+
 
 '''
 
