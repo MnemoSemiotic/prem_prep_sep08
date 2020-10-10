@@ -121,20 +121,22 @@ k = 5
 '''
 
 Poisson textbook problems
-
-Forty stray cats walk by your porch every 2 hours at night. What is the probability that fifty stray cats walk by in 3 hours on a given night?
-Constraints: time of night, seasonality, prior cats doesn't affect rate
-
 '''
 from math import e
 def poisson_pmf(lmbda, k):
     return lmbda**k * e**(-lmbda) / factorial(k)
 
-lmbda = 60 # 40 * 3/2
-k = 50
 
-print(poisson_pmf(lmbda, k))
-# 0.023
+'''
+Forty stray cats walk by your porch every 2 hours at night. What is the probability that fifty stray cats walk by in 3 hours on a given night?
+Constraints: time of night, seasonality, prior cats doesn't affect rate
+
+'''
+# lmbda = 60 # 40 * 3/2
+# k = 50
+
+# print(poisson_pmf(lmbda, k))
+# # 0.023
 
 
 
