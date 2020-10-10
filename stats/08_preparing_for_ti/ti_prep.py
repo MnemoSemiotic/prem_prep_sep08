@@ -252,9 +252,6 @@ sum of each die roll multiplied by 4 over the positional value of that die (inde
 
 SUM(i=1 to n=5) { roll_i * (4/i) } 
 
-
-What is the probability that 
-
 '''
 def roll_math(lst):
     sum_ = 0
@@ -263,6 +260,15 @@ def roll_math(lst):
         sum_ += roll * (4 / i)
 
     return sum_
+
+
+'''
+What is the probability that:
+
+P(A <= 7) = ?
+
+P(A > 9) = ?
+'''
 
 
 
