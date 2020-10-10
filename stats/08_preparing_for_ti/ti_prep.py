@@ -279,7 +279,17 @@ for r1 in range(1, 4+1):
                 for r5 in range(1, 4+1):
                     outcomes_A.append(roll_math([r1, r2, r3, r4, r5]))
 
+le_7 = []
+gt_9 = []
 
+for outcome in outcomes:
+    if outcome <= 7:
+        le_7.append(outcomes)
+    if outcome > 9:
+        gt_9.append(outcomes)
+
+print(len(le_7) / len(outcomes))
+print(len(gt_9) / len(outcomes))
 
 '''
 
