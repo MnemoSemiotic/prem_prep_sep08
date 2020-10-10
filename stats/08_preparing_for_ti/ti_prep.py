@@ -373,13 +373,16 @@ def analyze_outcomes(n=5, num_samples=10000):
         d[k][0] += 1
         d[k][1].append(roll)
 
+    for outcome, val in sorted(d.items()):
+        d[outcome][0] /= num_samples
+
     return d
 
 
 
-d = analyze_outcomes(n=5, num_samples=10000)
+d_sampling = analyze_outcomes(n=5, num_samples=10000)
 
-for outcome, val in sorted(d.items()):
+for outcome, val in sorted(d_sampling.items()):
     print(f'{outcome}: {val[0]}')
     # for lst in val[1]:
     #     print(f'\t{lst}')
