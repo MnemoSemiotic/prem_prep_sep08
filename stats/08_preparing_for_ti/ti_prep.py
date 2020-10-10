@@ -338,6 +338,11 @@ d = dict()
 # let's modify this approach to utilize whole number bins
 
 for outcome in outcomes_A:
-    if int(outcome) not in d:
-        d[f'{int(outcome)} <= a < {int(outcome) + 1}'] = 0
-    d[outcome] += 1
+    k = f'{int(outcome)} <= a < {int(outcome) + 1}'
+
+    if k not in d:
+        d[k] = 0
+    d[k] += 1
+
+for outcome, count in sorted(d.items()):
+    print(f'{outcome}: {count}')
