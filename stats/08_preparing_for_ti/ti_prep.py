@@ -156,7 +156,20 @@ you eat (on avg) 10 chocolates per hour.  what is the probably you eat 20 chocol
 # # 7.209282379462172e-05
 
 
+'''
+You go for a walk every day at noon. On a 30 minute walk, on avg, you see 3 magpies. If you go for a walk that is an hour and 15 minutes, what is the probably that you will see 11 magpies?
+'''
+# lmbda = 3 * 2.5
+# k = 11
+# print(poisson_pmf(lmbda, k))
+# # 0.0585
 
+'''
+10 dogs are saved from the shelter every 8 hours on average. What is the probability that 25 dogs would be saved in 16 hours?
+'''
+lmbda 10 * 2
+k = 25
+print(poisson_pmf(lmbda, k))
 
 '''
 
