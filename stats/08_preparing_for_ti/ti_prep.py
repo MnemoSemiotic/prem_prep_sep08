@@ -253,6 +253,8 @@ sum of each die roll multiplied by 4 over the positional value of that die (inde
 SUM(i=1 to n=5) { roll_i * (4/i) } 
 
 '''
+
+'''                   Using Counting                '''
 def roll_math(lst):
     sum_ = 0
 
@@ -294,6 +296,13 @@ for outcome in outcomes_A:
 # print(len(le_18) / len(outcomes_A)) # ~0.21
 # print(len(gt_12) / len(outcomes_A)) # ~0.99
 
+
+
+'''                   Using Sampling                '''
+from random import choice
+
+def roll_die():
+    return choice([1,2,3,4])
 
 
 
