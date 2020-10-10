@@ -340,7 +340,7 @@ d_counting = dict()
 for outcome in outcomes_A:
     k = f'{int(outcome[0])} <= a < {int(outcome[0]) + 1}'
 
-    if k not in d:
+    if k not in d_counting:
         d_counting[k] = [0, []]
     d_counting[k][0] += 1
     d_counting[k][1].append(outcome[1])
@@ -350,10 +350,10 @@ for outcome, val in sorted(d_counting.items()):
     d_counting[outcome][0] /= len(outcomes_A) 
 
 
-# for outcome, val in sorted(d_counting.items()):
-#     print(f'{outcome}: {val[0]}')
-#     for lst in val[1]:
-#         print(f'\t{lst}')
+for outcome, val in sorted(d_counting.items()):
+    print(f'{outcome}: {val[0]}')
+    # for lst in val[1]:
+    #     print(f'\t{lst}')
 
 
 
