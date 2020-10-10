@@ -256,7 +256,7 @@ SUM(i=1 to n=5) { roll_i * (4/i) }
 def roll_math(lst):
     sum_ = 0
 
-    for roll in enumerate(lst, 1):
+    for i, roll in enumerate(lst, 1):
         sum_ += roll * (4 / i)
 
     return sum_
