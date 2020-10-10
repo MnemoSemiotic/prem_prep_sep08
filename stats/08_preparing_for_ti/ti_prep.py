@@ -345,7 +345,7 @@ for outcome in outcomes_A:
     d[k][0] += 1
     d[k][1].append(outcome[1])
 
-for outcome, val in sorted(d.items()):
-    print(f'{outcome}: {val[0]}')
-    for lst in val[1]:
-        print(f'\t{lst}')
+# for outcome, val in sorted(d.items()):
+#     print(f'{outcome}: {val[0]}')
+#     for lst in val[1]:
+#         print(f'\t{lst}')
