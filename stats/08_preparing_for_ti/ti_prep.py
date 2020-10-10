@@ -142,9 +142,20 @@ Constraints: time of night, seasonality, prior cats doesn't affect rate
 '''
 if on average 3 mosquitos bite you every 30 min while you’re fishing, what is the probability that 7 mosquitos bite you in 3 hours?
 '''
-lmbda = 3 * 6
-k = 7
+# lmbda = 3 * 6
+# k = 7
+# print(poisson_pmf(lmbda, k))
+# # 0.00185
+
+'''
+you eat (on avg) 10 chocolates per hour.  what is the probably you eat 20 chocolates in 45 minutes from your 10 boxes of chocolates
+'''
+lmbda = 10 * (3/4)
+k = 20
 print(poisson_pmf(lmbda, k))
+
+
+
 
 
 '''
