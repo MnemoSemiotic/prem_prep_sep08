@@ -265,9 +265,9 @@ def roll_math(lst):
 '''
 What is the probability that:
 
-P(A <= 7) = ?
+P(A <= 18) = ?
 
-P(A > 9) = ?
+P(A > 12) = ?
 '''
 
 outcomes_A = []
@@ -279,21 +279,23 @@ for r1 in range(1, 4+1):
                 for r5 in range(1, 4+1):
                     outcomes_A.append(roll_math([r1, r2, r3, r4, r5]))
 
-le_7 = []
-gt_9 = []
+# print(min(outcomes_A))
+# print(max(outcomes_A))
+
+le_18 = []
+gt_12 = []
 
 for outcome in outcomes_A:
-    if outcome <= 7:
-        le_7.append(outcome)
-    if outcome > 9:
-        gt_9.append(outcome)
+    if outcome <= 18:
+        le_18.append(outcome)
+    if outcome > 12:
+        gt_12.append(outcome)
 
-print(len(le_7) / len(outcomes_A))
-print(len(gt_9) / len(outcomes_A))
+print(len(le_18) / len(outcomes_A))
+print(len(gt_12) / len(outcomes_A))
 
 
-print(min(outcomes_A))
-print(max(outcomes_A))
+
 
 '''
 
