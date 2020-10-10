@@ -197,13 +197,47 @@ What is the probability that 30 black cars pass by in an hour?
 
 
 
-
-
 '''
 
 Random Variables
 
 '''
+
+'''
+Consider a random variable Z
+
+Z = 0 : when the sum of a 6 sided die and a 36
+        sided die is even
+Z = 1 : when the sum of a 6 sided die and a 36
+        sided die is not even AND is divisible by 3
+Z = 2 : in all other circumstances (not Z=0 AND not 
+        Z=1) 
+
+What is the probability that three successive dice rolls result in the sequence of outcomes Z=2, Z=1, Z=0
+'''
+
+outcomes_distr = []
+
+for i in range(1, 6+1):
+    for j in range(1, 36+1):
+        sum_ = i + j
+        if sum_ % 2 == 0:
+            outcomes_distr.append(0)
+        elif sum_ % 3 == 0:
+            outcomes_distr.append(1)
+        else:
+            outcomes_distr.append(2)
+
+
+
+
+
+
+
+
+
+
+
 
 
 '''
