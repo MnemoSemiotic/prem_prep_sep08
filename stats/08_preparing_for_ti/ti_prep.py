@@ -270,6 +270,15 @@ P(A <= 7) = ?
 P(A > 9) = ?
 '''
 
+outcomes_A = []
+
+for r1 in range(1, 4+1):
+    for r2 in range(1, 4+1):
+        for r3 in range(1, 4+1):
+            for r4 in range(1, 4+1):
+                for r5 in range(1, 4+1):
+                    outcomes_A.append(roll_math([r1, r2, r3, r4, r5]))
+
 
 
 '''
