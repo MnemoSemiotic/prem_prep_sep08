@@ -322,3 +322,15 @@ Analysis using Dictionaries
 '''
 
 
+'''       Analysis of Counting Approach (5 rolls)            '''
+
+d = dict()
+
+# count each outcome for a first look
+for outcome in outcomes_A:
+    if outcome not in d:
+        d[outcome] = 0
+    d[outcome] += 1
+
+for outcome, count in in sorted(d.items()):
+    print(f'{outcome}: {count}')
