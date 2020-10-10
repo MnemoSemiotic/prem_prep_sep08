@@ -53,7 +53,7 @@ def binomial_pmf(n, k, p=0.5):
     return combinations(n, k) * (p**k) * ((1-p)**(n-k))
 
 
-print(binomial_pmf(n=20, k=10, p=(2/13))
+print(binomial_pmf(n=20, k=10, p=(2/13)))
 
 
 
