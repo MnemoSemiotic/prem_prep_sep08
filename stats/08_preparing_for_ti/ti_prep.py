@@ -349,3 +349,21 @@ for outcome in outcomes_A:
 #     print(f'{outcome}: {val[0]}')
 #     for lst in val[1]:
 #         print(f'\t{lst}')
+
+
+
+'''       Analysis of Sampling Approach (5 rolls)            '''
+
+def analyze_outcomes(n=5, num_samples=10000):
+    d = dict()
+
+    for _ in range(num_samples):
+        outcome = roll_die_n_times(n):
+        res, roll = roll_math(outcome)
+
+        k = f'{int(outcome[0])} <= a < {int(outcome[0]) + 1}'
+
+        if k not in d:
+            d[k] = [0, []]
+        d[k][0] += 1
+        d[k][1].append(outcome[1])
