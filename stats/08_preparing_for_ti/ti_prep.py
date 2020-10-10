@@ -228,11 +228,12 @@ for i in range(1, 6+1):
         else:
             out.append(2)
 
-p_Z_0 = (out.count(0) / len(count))
-p_Z_1 = (out.count(1) / len(count))
-p_Z_2 = (out.count(2) / len(count))
+p_Z_0 = (out.count(0) / len(out))
+p_Z_1 = (out.count(1) / len(out))
+p_Z_2 = (out.count(2) / len(out))
 
-print(p_Z_2 * p_Z_1 * p_Z_0)
+# print(p_Z_2 * p_Z_1 * p_Z_0)
+# # ~0.0278
 
 
 
