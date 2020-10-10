@@ -91,7 +91,24 @@ p = 4/15
 n = 30
 k = 12
 '''
-print(binomial_pmf(n=30, k=12, p=(4/15)))
+# print(binomial_pmf(n=30, k=12, p=(4/15)))
+# 0.042
+
+
+'''
+Walking your dog on any given day, on average 2 out of 5 dogs you pass are golden retrievers. If you see 17 dogs on one particular day, what is the probability that 8 of them are golden retrievers?
+
+p = 2/5
+n = 17
+k = 8
+
+'''
+print(binomial_pmf(n=17, k=8, p=(2/5)))
+
+
+
+
+
 
 
 
