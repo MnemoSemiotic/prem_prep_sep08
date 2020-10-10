@@ -282,14 +282,18 @@ for r1 in range(1, 4+1):
 le_7 = []
 gt_9 = []
 
-for outcome in outcomes:
+for outcome in outcomes_A:
     if outcome <= 7:
-        le_7.append(outcomes)
+        le_7.append(outcome)
     if outcome > 9:
-        gt_9.append(outcomes)
+        gt_9.append(outcome)
 
-print(len(le_7) / len(outcomes))
-print(len(gt_9) / len(outcomes))
+print(len(le_7) / len(outcomes_A))
+print(len(gt_9) / len(outcomes_A))
+
+
+print(min(outcomes_A))
+print(max(outcomes_A))
 
 '''
 
