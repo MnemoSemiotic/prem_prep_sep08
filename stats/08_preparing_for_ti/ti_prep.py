@@ -65,7 +65,8 @@ p_caramel = 7/22
 k = 5
 n = 10
 '''
-print(binomial_pmf(n=10, k=5, p=(7/22)))
+# print(binomial_pmf(n=10, k=5, p=(7/22)))
+# 0.121
 
 
 
