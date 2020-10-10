@@ -108,7 +108,14 @@ k = 8
 
 '''
 You are looking for the stray cats (no name tag cats) in your neighborhood. On average, three out of every 20 cats have no name tags walk through your house. What is the probability that, in one particular set of observations, five no name tag cats out of 10 cats walk by your house?
+
+p = 3/20
+n = 10
+k = 5
 '''
+
+# print(binomial_pmf(n=10, k=5, p=(3/20)))
+
 
 
 
