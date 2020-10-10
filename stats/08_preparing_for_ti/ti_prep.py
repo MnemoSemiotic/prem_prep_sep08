@@ -69,6 +69,8 @@ n = 10
 # 0.121
 
 '''
+** watch for keywords: ALL, NONE, AT LEAST/LESS THAN
+
 If on average 20 of 50 counties in California experience wildfires during any given year, what is the prob that all 50 counties will see a wildfire in a single year?
 Constraint: massive invisible/fireproof wall betw each county
 
@@ -76,9 +78,9 @@ p = 20/50
 n = 50
 k = 50
 '''
-print(binomial_pmf(n=50, k=50, p=(20/50)))
-print((20/50)**50)
-# 1.2676506002282329e-20
+# print(binomial_pmf(n=50, k=50, p=(20/50)))
+# print((20/50)**50)
+# # 1.2676506002282329e-20
 
 '''
 
