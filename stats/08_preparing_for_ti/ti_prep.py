@@ -326,11 +326,18 @@ Analysis using Dictionaries
 
 d = dict()
 
-# count each outcome for a first look
-for outcome in outcomes_A:
-    if outcome not in d:
-        d[outcome] = 0
-    d[outcome] += 1
+# # count each outcome for a first look
+# for outcome in outcomes_A:
+#     if outcome not in d:
+#         d[outcome] = 0
+#     d[outcome] += 1
 
-for outcome, count in sorted(d.items()):
-    print(f'{outcome}: {count}')
+# for outcome, count in sorted(d.items()):
+#     print(f'{outcome}: {count}')
+
+# let's modify this approach to utilize whole number bins
+
+for outcome in outcomes_A:
+    if int(outcome) not in d:
+        d[f'{int(outcome)} <= a < {int(outcome) + 1}'] = 0
+    d[outcome] += 1
