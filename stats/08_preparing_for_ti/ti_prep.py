@@ -261,7 +261,7 @@ def roll_math(lst):
     for i, roll in enumerate(lst, 1):
         sum_ += roll * (4 / i)
 
-    return sum_
+    return sum_, lst
 
 
 '''
