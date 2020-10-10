@@ -1,5 +1,7 @@
 ''' TI Style Questions (2020-10-10) '''
 
+
+
 '''
 
 Binomial textbook problems
