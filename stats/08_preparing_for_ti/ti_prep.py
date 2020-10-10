@@ -185,6 +185,20 @@ On average, over the course of 365 days there are 300 lightning strikes observed
 # print(1 - accum)
 # # 1.132522436952943e-05
 
+
+'''
+2 black cars go pass the stop sign every 15min. 
+What is the probability that 30 black cars pass by in an hour?
+'''
+# lmbda = 2*4
+# k = 30
+# print(poisson_pmf(lmbda, k))
+# # 1.5656103352041073e-09
+
+
+
+
+
 '''
 
 Random Variables
