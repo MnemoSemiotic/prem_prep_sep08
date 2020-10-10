@@ -291,8 +291,8 @@ for outcome in outcomes_A:
     if outcome > 12:
         gt_12.append(outcome)
 
-print(len(le_18) / len(outcomes_A))
-print(len(gt_12) / len(outcomes_A))
+# print(len(le_18) / len(outcomes_A)) # ~0.21
+# print(len(gt_12) / len(outcomes_A)) # ~0.99
 
 
 
