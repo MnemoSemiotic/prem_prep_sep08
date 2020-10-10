@@ -139,6 +139,13 @@ Constraints: time of night, seasonality, prior cats doesn't affect rate
 # # 0.023
 
 
+'''
+if on average 3 mosquitos bite you every 30 min while you’re fishing, what is the probability that 7 mosquitos bite you in 3 hours?
+'''
+lmbda = 3 * 6
+k = 7
+print(poisson_pmf(lmbda, k))
+
 
 '''
 
