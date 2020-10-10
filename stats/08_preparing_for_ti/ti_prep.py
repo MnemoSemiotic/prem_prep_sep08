@@ -68,8 +68,15 @@ n = 10
 # print(binomial_pmf(n=10, k=5, p=(7/22)))
 # 0.121
 
+'''
+If on average 20 of 50 counties in California experience wildfires during any given year, what is the prob that all 50 counties will see a wildfire in a single year?
+Constraint: massive invisible/fireproof wall betw each county
 
-
+p = 20/50
+n = 50
+k = 50
+'''
+print(binomial_pmf(n=50, k=50, p=(20/50)))
 
 
 '''
