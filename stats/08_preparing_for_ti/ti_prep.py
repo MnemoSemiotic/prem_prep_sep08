@@ -304,7 +304,16 @@ from random import choice
 def roll_die():
     return choice([1,2,3,4])
 
+def roll_die_n_times(n=5):
+    rolls = []
+    
+    for _ in range(n):
+        rolls.append(roll_die())
 
+    return rolls
+
+
+print(roll_die_n_times(n=5))
 
 '''
 
